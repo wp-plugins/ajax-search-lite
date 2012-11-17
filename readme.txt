@@ -22,6 +22,7 @@ A resonsive search engine, which will boost your user experience by providing a 
 * Uses jQuery for maximu compatibility
 
 Homepage: [wp-dreams.com](http://wp-dreams.com)
+
 Pro version Demo:  [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajax-searhc-pro)
 
 == Installation ==
