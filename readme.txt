@@ -14,12 +14,12 @@ A powerful ajax search engine for WordPress.
 
 A resonsive search engine, which will boost your user experience by providing a user friendly ajax powered search form.
 
-**Features List
-*Search in posts and pages
-*Frontend search settings boxes
-*Images in search results
-*Fully ajax powered
-*Uses jQuery for maximu compatibility
+**Features List**
+* Search in posts and pages
+* Frontend search settings boxes
+* Images in search results
+* Fully ajax powered
+* Uses jQuery for maximu compatibility
 
 Homepage: [wp-dreams.com](http://wp-dreams.com)
 Pro version Demo:  [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajax-searhc-pro)
