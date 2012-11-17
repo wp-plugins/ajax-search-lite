@@ -14,7 +14,8 @@ A powerful ajax search engine for WordPress.
 
 A resonsive search engine, which will boost your user experience by providing a user friendly ajax powered search form.
 
-**Features List**
+**Features List:**
+
 * Search in posts and pages
 * Frontend search settings boxes
 * Images in search results
