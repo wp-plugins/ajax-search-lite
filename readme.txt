@@ -20,11 +20,11 @@ A resonsive search engine, which will boost your user experience by providing a 
 * Frontend search settings boxes
 * Images in search results
 * Fully ajax powered
-* Uses jQuery for maximu compatibility
+* Uses jQuery for maximum compatibility
 
 Homepage: [wp-dreams.com](http://wp-dreams.com)
 
-Pro version Demo:  [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajax-searhc-pro)
+Pro version Demo:  [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajaxsearchpro)
 
 == Installation ==
 
