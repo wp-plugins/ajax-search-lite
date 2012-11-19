@@ -54,6 +54,13 @@ Author URI: http://wp-dreams.com
         ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
       "; 
       dbDelta($query);
+      ob_start();
+      ?>
+      INSERT INTO `<?php echo $table_name; ?>` (`id`, `name`, `data`) VALUES
+(1, 'Search', '');
+      <?php
+      $query = ob_get_clean();
+      dbDelta($query);
     }
         
     function navigation_menu() {
