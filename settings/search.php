@@ -188,12 +188,14 @@
           <legend>Genearal Options</legend>
               <div class="item">
               <?php
+              if (!isset($search['data']['searchinposts'])) $search['data']['searchinposts']=1;
               $o = new wpdreamsYesNo("searchinposts_".$search['id'], "Search in posts?", $search['data']['searchinposts']);
               $params[$o->getName()] = $o->getData();
               ?>
               </div>
               <div class="item">
               <?php
+              if (!isset($search['data']['searchinpages'])) $search['data']['searchinpages']=1;
               $o = new wpdreamsYesNo("searchinpages_".$search['id'], "Search in pages?", $search['data']['searchinpages']);
               $params[$o->getName()] = $o->getData();
               ?>
@@ -201,12 +203,14 @@
 
               <div class="item">
               <?php
+              if (!isset($search['data']['searchintitle'])) $search['data']['searchintitle']=1;
               $o = new wpdreamsYesNo("searchintitle_".$search['id'], "Search in title?", $search['data']['searchintitle']);
               $params[$o->getName()] = $o->getData();
               ?>
               </div>
               <div class="item">
               <?php
+              if (!isset($search['data']['searchincontent'])) $search['data']['searchincontent']=1;
               $o = new wpdreamsYesNo("searchincontent_".$search['id'], "Search in content?", $search['data']['searchincontent']);
               $params[$o->getName()] = $o->getData();
               ?>
@@ -214,24 +218,29 @@
 
               <div class="item">
               <?php
+              if (!isset($search['data']['exactonly'])) $search['data']['exactonly']=0;
               $o = new wpdreamsYesNo("exactonly_".$search['id'], "Show exact matches only?", $search['data']['exactonly']);
               $params[$o->getName()] = $o->getData();
               ?>
               </div>
               <div class="item"><?php
+              if (!isset($search['data']['orderby'])) $search['data']['orderby']=$_search_default['orderby'];
               $o = new wpdreamsSelect("orderby_".$search['id'], "Result ordering", (($search['data']['orderby']!="")?$search['data']['orderby']:$_search_default['orderby'] ));
               $params[$o->getName()] = $o->getData();
               $params["selected-".$o->getName()] = $o->getSelected();
               ?></div>  
               <div class="item"><?php
+              if (!isset($search['data']['charcount'])) $search['data']['charcount']=1;
               $o = new wpdreamsTextSmall("charcount_".$search['id'], "Minimal character count to trigger search", $search['data']['charcount'], array( array("func"=>"ctype_digit", "op"=>"eq", "val"=>true) ));
               $params[$o->getName()] = $o->getData();
               ?></div>
               <div class="item"><?php
+              if (!isset($search['data']['maxresults'])) $search['data']['maxresults']=20;
               $o = new wpdreamsTextSmall("maxresults_".$search['id'], "Max. results", $search['data']['maxresults'], array( array("func"=>"ctype_digit", "op"=>"eq", "val"=>true) ));
               $params[$o->getName()] = $o->getData();
               ?></div>  
               <div class="item"><?php
+              if (!isset($search['data']['itemscount'])) $search['data']['itemscount']=4;
               $o = new wpdreamsTextSmall("itemscount_".$search['id'], "Results box viewport (in item numbers)", $search['data']['itemscount'], array( array("func"=>"ctype_digit", "op"=>"eq", "val"=>true) ));
               $params[$o->getName()] = $o->getData();
               ?></div>            
@@ -243,6 +252,7 @@
               </div>
               <div class="item">
               <?php
+              if (!isset($search['data']['showexactmatches'])) $search['data']['showexactmatches']=1;
               $o = new wpdreamsYesNo("showexactmatches_".$search['id'], "Show exact matches selector?", $search['data']['showexactmatches']);
               $params[$o->getName()] = $o->getData();
               if ($search['data']['exactmatchestext']=="") $search['data']['exactmatchestext'] = $_search_default['exactmatchestext'];
@@ -270,18 +280,21 @@
           <legend>Layout Options</legend>
               <div class="item">          
               <?php
+              if (!isset($search['data']['resultareaclickable'])) $search['data']['resultareaclickable']=1;
               $o = new wpdreamsYesNo("resultareaclickable_".$search['id'], "Make the whole result area clickable?", $search['data']['resultareaclickable']);
               $params[$o->getName()] = $o->getData();
               ?>
               </div>
               <div class="item">          
               <?php
+              if (!isset($search['data']['showauthor'])) $search['data']['showauthor']=1;
               $o = new wpdreamsYesNo("showauthor_".$search['id'], "Show author in results?", $search['data']['showauthor']);
               $params[$o->getName()] = $o->getData();
               ?>
               </div>
               <div class="item">               
               <?php
+              if (!isset($search['data']['showdate'])) $search['data']['showdate']=1;
               $o = new wpdreamsYesNo("showdate_".$search['id'], "Show date in results?", $search['data']['showdate']);
               $params[$o->getName()] = $o->getData();
               ?>
