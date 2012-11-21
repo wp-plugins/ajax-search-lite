@@ -26,6 +26,17 @@ Homepage: [wp-dreams.com](http://wp-dreams.com)
 
 Pro version Demo:  [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajaxsearchpro)
 
+**New In pro version 1.2:**
+
+* Demo: [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajaxsearchpro)
+* Search in BuddyPress, BBPress, JigoShop, Woocommerce
+* qTranslate ready
+* Search in any custom post types
+* Responsive design
+* Search in custom fields
+* 35+ Themes - Fully configurable and editable
+* 70+ Admin options                                                    
+
 == Installation ==
 
 1. Upload `ajax-search-lite` to the `/wp-content/plugins/` directory
