@@ -21,6 +21,7 @@ A resonsive search engine, which will boost your user experience by providing a 
 * Images in search results
 * Fully ajax powered
 * Uses jQuery for maximum compatibility
+* Caches images for faster response
 
 Homepage: [wp-dreams.com](http://wp-dreams.com)
 
