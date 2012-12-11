@@ -64,16 +64,17 @@ Author URI: http://wp-dreams.com
     }
         
     function navigation_menu() {
-    	if (!defined("EMU2_I18N_DOMAIN")) define('EMU2_I18N_DOMAIN', "");
-      add_menu_page( 
-    	 __('Ajax Search Lite', EMU2_I18N_DOMAIN),
-    	 __('Ajax Search Lite', EMU2_I18N_DOMAIN),
-    	 0,
-    	 AJAXSEARCHLITE_DIR.'/settings.php',
-    	 '',
-    	 plugins_url('/icon.png', __FILE__)
-      );   
-         
+      if(current_user_can('add_users')) {
+      	if (!defined("EMU2_I18N_DOMAIN")) define('EMU2_I18N_DOMAIN', "");
+        add_menu_page( 
+      	 __('Ajax Search Lite', EMU2_I18N_DOMAIN),
+      	 __('Ajax Search Lite', EMU2_I18N_DOMAIN),
+      	 0,
+      	 AJAXSEARCHLITE_DIR.'/settings.php',
+      	 '',
+      	 plugins_url('/icon.png', __FILE__)
+        );   
+      }   
     }
      
     function styles() {
