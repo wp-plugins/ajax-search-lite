@@ -151,7 +151,7 @@
   $_search_default['showdate'] = 1;
   $_search_default['showdescription'] = 1;
   $_search_default['descriptionlength'] = 130;
-  $_themes = file_get_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'themes.json');
+  //$_themes = file_get_contents(dirname(__FILE__).DIRECTORY_SEPARATOR.'themes.json');
   ?>
 
   <?php
