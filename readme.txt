@@ -27,7 +27,7 @@ Homepage: [wp-dreams.com](http://wp-dreams.com)
 
 Pro version Demo:  [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajaxsearchpro)
 
-**New In pro version 1.2:**
+**New In pro version 1.5 (2013.02.07):**
 
 * Demo: [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajaxsearchpro)
 * Search in BuddyPress, BBPress, JigoShop, Woocommerce
@@ -35,6 +35,9 @@ Pro version Demo:  [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajaxsearchpro)
 * Search in any custom post types
 * Responsive design
 * Search in custom fields
+* Category selectors on the frontend – It’s now possible to filter the posts by categories
+* Post grouping by category or post type!
+* Search in comments
 * 35+ Themes - Fully configurable and editable
 * 70+ Admin options                                                    
 
