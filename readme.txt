@@ -58,6 +58,9 @@ Pro version Demo:  [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajaxsearchpro)
 
 == Changelog ==
 
+= 1.1 =
+* Disappear bugfix
+* WordPress 3.5 compatible
 
 
 == Upgrade notice ==
