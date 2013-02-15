@@ -27,7 +27,7 @@ Homepage: [wp-dreams.com](http://wp-dreams.com)
 
 Pro version Demo:  [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajaxsearchpro)
 
-**New In pro version 1.5 (2013.02.07):**
+**New In pro version 1.6 (2013.02.07):**
 
 * Demo: [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajaxsearchpro)
 * Search in BuddyPress, BBPress, JigoShop, Woocommerce
@@ -58,6 +58,9 @@ Pro version Demo:  [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajaxsearchpro)
 
 == Changelog ==
 
+= 1.1 =
+* Disappear bugfix
+* WordPress 3.5 compatible
 
 
 == Upgrade notice ==
