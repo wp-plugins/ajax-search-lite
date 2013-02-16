@@ -4,7 +4,7 @@ Donate link: http://wp-dreams.com
 Tags: search, ajax search, ajax wordpress search, ajax search pro
 Requires at least: 3.3
 Tested up to: 3.5
-Stable tag: 1.1
+Stable tag: 1.15
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,10 @@ Pro version Demo:  [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajaxsearchpro)
 2. Administrator area
 
 == Changelog ==
+
+= 1.15 =
+* Search widget added
+* Multisite fix
 
 = 1.1 =
 * Disappear bugfix
