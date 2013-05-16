@@ -14,6 +14,8 @@ A powerful ajax search engine for WordPress.
 
 A resonsive search engine, which will boost your user experience by providing a user friendly ajax powered search form. Very smooth animations with mobile device support.
 
+Demo: [Here] (http://wp-dreams.com/ajax-search-lite/)
+
 **Features List:**
 
 * Search in posts and pages
