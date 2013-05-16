@@ -51,6 +51,28 @@ Pro version Demo:  [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajaxsearchpro)
 
 == Frequently asked questions ==
 
+= The images are not showing, what is wrong? =
+
+The search parses the first image from the post/page content. Most likely there 
+is no image in post.
+
+= I added images to the post/page but I still cannot see them =
+
+Try to chmod to 777 the wp-content/plugins/ajax-search-lite/cache/ directory! All 
+the image files will be stored there.
+Also, make sure, that the "furl open wrapper" is enabled on your server! In some cases
+this feature is disabled and you need to contact the server administrator to enable it for you.
+
+= When I type in something, the search wheel is spinning, but nothing happens =
+
+It is most likely, that another plugin or the template is throwing errors while the
+ajax request is generated. Disabling all the plugins one by one can help you rule out which plugin
+is creating the issue.
+
+= I disabled all the plugins but the search wheel is still spinning to infinity, nothing happens =
+
+You should contact me on the support forum with your website url. I will check your website
+and will let you know what to do.
 
 
 == Screenshots ==
