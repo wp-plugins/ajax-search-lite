@@ -25,16 +25,19 @@ if (!class_exists('wpdreamsImageCache')) {
     * @param int $h height of the result image 
     * @param int $imagenum (optional) the number of the image found in the text to be cached, if left blank, then the $im is treated as an url and NOT as TEXT!               
     */    
-    function __construct($im, $saveas, $w, $h, $imagenum=-1) {
+    function __construct($im, $saveas, $w, $h, $imagenum=-1, $color="#ffffff") {
       if ($imagenum>=0) {
         $this->content = $im;
         $this->imagenum = $imagenum-1;
         $this->parse_content();
-      } else {
+      } else { 
         $this->im = $im;
       }
-      $this->resultImageName = $this->img_resizer($this->im, 100, $w, $h, $saveas);
-    }
+      /* Clear all possible warning, not safe, but still.. */
+      ob_start();
+      $this->resultImageName = $this->img_resizer($this->im, 100, $w, $h, $saveas, $color);
+      ob_end_clean();
+    } 
     
     function parse_content() {
       $this->im = "";
@@ -47,23 +50,10 @@ if (!class_exists('wpdreamsImageCache')) {
          if ($images->length>$this->imagenum) {
            $this->im = $images->item($this->imagenum)->getAttribute('src');
          } else {
+           $this->imagenum = 0;
            $this->im = $images->item(0)->getAttribute('src');
          }
       }
-      /*foreach ($images as $image) {
-        echo $image->getAttribute('src');
-      }
-for ($i = 0; $i < $items->length; $i++) {
-    echo $items->item($i)->nodeValue . "\n";
-}
-      $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $this->content, $matches);
-      if (isset($matches) && isset($matches[1]) && isset($matches[1][$this->imagenum])) {
-        $this->im = $matches [1] [$this->imagenum]; 
-      } else if (isset($matches) && isset($matches[1]) && isset($matches[1][0])) {
-        $this->im = $matches [1] [0]; 
-      } else {
-        $this->im = "";
-      } */
     }
     
     function get_image() {
@@ -74,40 +64,41 @@ for ($i = 0; $i < $items->length; $i++) {
         if (strpos($fn,"/") !== false) {
             $p=substr($fn,0,strrpos($fn,"/"));
             if (!is_dir($p)) {
-                _o("Mkdir: ".$p);
-                mkdir($p,777,true);
+                //_o("Mkdir: ".$p);
+                mkdir($p,0777,true);
             }
         }
     }    
     
-    function img_resizer($src,$quality,$w,$h,$saveas) {
+    function img_resizer($src,$quality,$w,$h,$saveas, $color) {
         if (!extension_loaded('gd') || !function_exists('gd_info')) {
             return "";
         }
-        if( ini_get('allow_url_fopen')!=true ) {
+        $method = $this->can_get_file();
+        if( $method==false) {
             return "";
-        }
+        }     
         if ($src=="") return "";
-        $filename = md5($src.$w.$h).".jpg";
+        $filename = md5($src.$w.$h.$this->imagenum).".jpg";
         $saveas .= $filename;
         if (file_exists($saveas)) return $filename;
         $r = 1;
-        /*$e=strtolower(substr($src,strrpos($src,".")+1,3));
-        if (($e == "jpg") || ($e == "peg")) {
-            $OldImage=ImageCreateFromJpeg($src) or $r=0;
-        } elseif ($e == "gif") {
-            $OldImage=ImageCreateFromGif($src) or $r=0;
-        } elseif ($e == "bmp") {
-            $OldImage=ImageCreateFromwbmp($src) or $r=0;
-        } elseif ($e == "png") {
-            $OldImage=ImageCreateFromPng($src) or $r=0;
-        } else {
-            return "";
-        }*/
-        $OldImage = imagecreatefromstring(file_get_contents($src));
+        $_file = $this->url_get_contents($src, $method);
+        if ($_file=="") return "";
+        $OldImage = imagecreatefromstring($_file);
+        $_bgcolor = $this->hex2rgb($color);
+        $bgcolor = imagecolorallocate($OldImage,  $_bgcolor[0],$_bgcolor[1],$_bgcolor[2]);
+        
+        
         if ($r) {
-            list($width,$height)=getimagesize($src);
-            if ($width<=0 || $height<=0) return ""; 
+            if ($method==1) {
+              list($width, $height) =$this->fast_getimagesize($OldImage);
+            } else {
+              list($width,$height) =getimagesize($src);
+            }
+            
+            if ($width<=0 || $height<=0) return "";
+             
             $_ratio=array($width/$height,$w/$h);
             if ($_ratio[0] != $_ratio[1]) { 
                 $_scale=min((float)($width/$w),(float)($height/$h));
@@ -116,10 +107,12 @@ for ($i = 0; $i < $items->length; $i++) {
                 $cropW=(float)($width-$cropX);
                 $cropH=(float)($height-$cropY); 
                 $crop=ImageCreateTrueColor($cropW,$cropH);
+                imagefilledrectangle($crop, 0, 0, $cropW, $cropH, $bgcolor);
                 ImageCopy($crop,$OldImage,0,0,(int)($cropX/2),(int)($cropY/2),$cropW,$cropH);
             }
            
             $NewThumb=ImageCreateTrueColor($w,$h);
+            imagefilledrectangle($NewThumb, 0, 0, $w, $h, $bgcolor);
             if (isset($crop)) {
                 ImageCopyResampled($NewThumb,$crop,0,0,0,0,$w,$h,$cropW,$cropH);
                 ImageDestroy($crop);
@@ -132,6 +125,50 @@ for ($i = 0; $i < $items->length; $i++) {
             ImageDestroy($OldImage);
         }
         return $filename;
+    }
+    
+    function can_get_file() {
+      if (function_exists('curl_init')){
+        return 1;
+      } else if (ini_get('allow_url_fopen')==true) {
+        return 2;
+      }
+      return false;
+    } 
+    
+    function url_get_contents($Url, $method) {
+        if ($method==2) {
+          return file_get_contents($Url);
+        } else if ($method==1) {
+          $ch = curl_init();
+          curl_setopt($ch, CURLOPT_URL, $Url);
+          curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+          $output = curl_exec($ch);
+          curl_close($ch);
+          return $output;
+        }
+    }
+    
+    function fast_getimagesize($im) {
+      $width = imagesx($im);
+      $height = imagesy($im);
+      return array($width, $height);
+    }
+    
+    function hex2rgb($color) {
+        if (strlen($color)<3) return array(255,255,255);
+        if ($color[0] == '#')
+            $color = substr($color, 1);
+        if (strlen($color) == 6)
+            list($r, $g, $b) = array($color[0].$color[1],
+                                     $color[2].$color[3],
+                                     $color[4].$color[5]);
+        elseif (strlen($color) == 3)
+            list($r, $g, $b) = array($color[0].$color[0], $color[1].$color[1], $color[2].$color[2]);
+        else
+            return false;
+        $r = hexdec($r); $g = hexdec($g); $b = hexdec($b); 
+        return array($r ,$g ,$b);
     } 
   }
 }
