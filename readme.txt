@@ -1,7 +1,7 @@
 === Ajax Search Lite ===
 Contributors: wpdreams
 Donate link: http://wp-dreams.com
-Tags: search, ajax search, ajax wordpress search, ajax search pro
+Tags: search, better wordpress search, better search plugin, ajax search, better search, wp search, wp search plugin, relevant search plugin, search plugin, wordpress search, advanced search, best wordpress search, ajax wordpress search, ajax search pro
 Requires at least: 3.3
 Tested up to: 3.5
 Stable tag: 1.3
@@ -13,8 +13,11 @@ A powerful ajax search engine for WordPress.
 == Description ==
 
 A resonsive search engine, which will boost your user experience by providing a user friendly ajax powered search form. Very smooth animations with mobile device support.
+Boost the user experience by providing a powerful ajax search plugin to your visitors. It will rock!
 
-Demo: [Here](http://wp-dreams.com/ajax-search-lite/)
+Demo: http://wp-dreams.com/ajax-search-lite/
+
+Like us on facebook: https://www.facebook.com/pages/WPDreams/383702515034741
 
 **Features List:**
 
@@ -100,7 +103,7 @@ and will let you know what to do.
 
 
 == Upgrade notice ==
-
+* Nothing to say here :)
 
 
 == Plugin website ==
