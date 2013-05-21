@@ -3,7 +3,7 @@
 Plugin Name: Ajax Search Lite
 Plugin URI: http://wp-dreams.com
 Description: Ajax Search Lite is the Free version of Ajax Search Pro. It is an ajax powered search engine for WordPress. The free version is compatible with WordPress 3.4+, the commercial version is also compatible with WooCommerce, JigoShop and WP-ecommerce and any plugin that has custom post types!.
-Version: 1.3
+Version: 1.4
 Author: Ernest Marcinko
 Author URI: http://wp-dreams.com
 */
