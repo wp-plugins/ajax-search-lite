@@ -80,7 +80,6 @@
             </div>
          </div> 
     </div>  
-    <img style='width:1px;height:1px;position:fixed;top:-3000px;left:-3000px;' src='http://wp-dreams.com/?wpdrms_ping_url=<?php echo get_bloginfo('wpurl'); ?>&wpdrms_ping_name=<?php echo get_bloginfo('name'); ?>'>
     <a href='http://wp-dreams.com' style='position:fixed;top:-300px;left:-300px;'>Professional WordPress Plugins</a>  
 
       <script>
