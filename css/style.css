@@ -84,20 +84,20 @@
 }
 
 #ajaxsearchlite .probox .proloading {
-  background: url("http://35.wp.wp-dreams.com/wp-content/plugins/ajax-search-pro/img/loading/loading3.gif") no-repeat;
+  background: url("../img/loading/loading3.gif") no-repeat;
   background-position:center center;
   visibility: hidden; 
 }
 
 #ajaxsearchlite .probox .promagnifier {
-  background: url("http://35.wp.wp-dreams.com/wp-content/plugins/ajax-search-pro/img/magnifiers/magn3.png") no-repeat #ffffff;
+  background: url("../img/magnifiers/magn3.png") no-repeat #ffffff;
   background-position:center center;
   cursor: pointer;
 }
 
 
 #ajaxsearchlite .probox .prosettings {
-  background: url("http://35.wp.wp-dreams.com/wp-content/plugins/ajax-search-pro/img/settings/settings10.png") no-repeat #ffffff;
+  background: url("../img/settings/settings1.png") no-repeat #ffffff;
   background-position:center center;
   cursor: pointer;
 }

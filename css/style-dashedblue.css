@@ -74,20 +74,20 @@
 }
 
 #ajaxsearchlite .probox .proloading {
-  background: url("http://wp-dreams.com/demo/wp-ajaxsearchpro/wp-content/plugins/ajax-search-pro/img/loading/loading4.gif") no-repeat;
+  background: url("../img/loading/loading3.gif") no-repeat;
   background-position:center center;
   visibility: hidden; 
 }
 
 #ajaxsearchlite .probox .promagnifier {
-  background: url("http://wp-dreams.com/demo/wp-ajaxsearchpro/wp-content/plugins/ajax-search-pro/img/magnifiers/magn7.png") no-repeat #b4e0f4;
+  background: url("../img/magnifiers/magn3.png") no-repeat #b4e0f4;
   background-position:center center;
   cursor: pointer;
 }
 
 
 #ajaxsearchlite .probox .prosettings {
-  background: url("http://wp-dreams.com/demo/wp-ajaxsearchpro/wp-content/plugins/ajax-search-pro/img/settings/settings5.png") no-repeat #b4e0f4;
+  background: url("../img/settings/settings1.png") no-repeat #b4e0f4;
   background-position:center center;
   cursor: pointer;
 }
