@@ -234,12 +234,16 @@
             height: $('.nores', $this.n.results).outerHeight(true)
           }); 
         }
-        $this.scrolling(true);
+        //$this.scrolling(true);
         $this.searching = false;
           $this.n.resdrg.css({
             "position":"absolute"
           });
-          $this.scroll = $this.n.resultsDiv.tinyscrollbar({ axis: 'y'});  
+          $this.scroll = $this.n.resultsDiv.tinyscrollbar({ axis: 'y'}); 
+        $this.scrolling(true);
+        setTimeout(function() {
+          $this.scrolling(true);
+        }, 50);   
      },
      hideResults : function( ) {
         var $this =  $.extend({}, this, methods);
