@@ -102,6 +102,7 @@
        if ($res!='') {
          $pageposts[$k]->image = plugins_url('/cache/'.$res , __FILE__);
        }
+       $pageposts[$k]->content = strip_shortcodes($pageposts[$k]->content);
        if ($pageposts[$k]->content!='')
         $pageposts[$k]->content = substr(strip_tags($pageposts[$k]->content), 0, 130)."...";
     }

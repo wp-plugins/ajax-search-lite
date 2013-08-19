@@ -30,11 +30,11 @@ Like us on facebook: https://www.facebook.com/pages/WPDreams/383702515034741
 
 Homepage: [wp-dreams.com](http://wp-dreams.com)
 
-Pro version Demo:  [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajaxsearchpro)
+Pro version Demo:  [Ajax Search Pro](http://wp-ajaxsearchpro.demo.wp-dreams.com)
 
 **New In pro version 1.8 (2013.05.10):**
 
-* Demo: [Ajax Search Pro](http://wp-dreams.com/demo/wp-ajaxsearchpro)
+* Demo: [Ajax Search Pro](http://wp-ajaxsearchpro.demo.wp-dreams.com)
 * Search in BuddyPress, BBPress, JigoShop, Woocommerce
 * qTranslate ready
 * Search result grouping by categories or post types
