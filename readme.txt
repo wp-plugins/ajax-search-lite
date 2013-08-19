@@ -1,4 +1,4 @@
-=== Ajax Search Lite ===
+﻿=== Ajax Search Lite ===
 Contributors: wpdreams
 Donate link: http://wp-dreams.com
 Tags: search, better wordpress search, better search plugin, ajax search, better search, wp search, wp search plugin, relevant search plugin, search plugin, wordpress search, advanced search, best wordpress search, ajax wordpress search, ajax search pro
@@ -86,6 +86,9 @@ and will let you know what to do.
 2. Administrator area - nice and smooth
 
 == Changelog ==
+
+= 1.5 =
+* Stripping shortcodes from results content
 
 = 1.4 =
 * Security fix
