@@ -79,8 +79,7 @@
             <div class="resdrg overview">                                  
             </div>
          </div> 
-    </div>  
-    <a href='http://wp-dreams.com' style='position:fixed;top:-300px;left:-300px;'>Professional WordPress Plugins</a>  
+    </div>   
 
       <script>
       asljQuery(document).ready(function() {
