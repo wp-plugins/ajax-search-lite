@@ -1,5 +1,3 @@
-<iframe frameborder='0' style='overflow:hidden;' width="710" height="160" src="http://wp-dreams.com/lite/index.php?ref=ajaxsearchlite" style="margin:10px;"></iframe>
-
 <?php ob_start(); ?>
 <fieldset>
 <legend>Genearal Options</legend>
