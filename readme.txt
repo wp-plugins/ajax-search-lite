@@ -87,6 +87,9 @@ and will let you know what to do.
 
 == Changelog ==
 
+= 1.6 =
+* Removed an unnecessary link
+
 = 1.5 =
 * Stripping shortcodes from results content
 
