@@ -1,10 +1,10 @@
-﻿=== Ajax Search Lite ===
+=== Ajax Search Lite ===
 Contributors: wpdreams
 Donate link: http://wp-dreams.com
 Tags: search, better wordpress search, better search plugin, ajax search, better search, wp search, wp search plugin, relevant search plugin, search plugin, wordpress search, advanced search, best wordpress search, ajax wordpress search, ajax search pro
-Requires at least: 3.3
-Tested up to: 3.5
-Stable tag: 1.5
+Requires at least: 3.5
+Tested up to: 3.8
+Stable tag: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,7 @@ Like us on facebook: https://www.facebook.com/pages/WPDreams/383702515034741
 **Features List:**
 
 * Search in posts and pages
+* 3 built in templates
 * Frontend search settings boxes
 * Images in search results
 * Fully ajax powered
@@ -30,11 +31,11 @@ Like us on facebook: https://www.facebook.com/pages/WPDreams/383702515034741
 
 Homepage: [wp-dreams.com](http://wp-dreams.com)
 
-Pro version Demo:  [Ajax Search Pro](http://wp-ajaxsearchpro.demo.wp-dreams.com)
+Pro version Demo:  [Ajax Search Pro](http://wp-ajaxsearchpro2.demo.wp-dreams.com)
 
-**New In pro version 1.8 (2013.05.10):**
+**New In pro version 2.0 (2014.01.10):**
 
-* Demo: [Ajax Search Pro](http://wp-ajaxsearchpro.demo.wp-dreams.com)
+* Demo: [Ajax Search Pro](http://wp-ajaxsearchpro2.demo.wp-dreams.com)
 * Search in BuddyPress, BBPress, JigoShop, Woocommerce
 * qTranslate ready
 * Search result grouping by categories or post types
@@ -86,6 +87,13 @@ and will let you know what to do.
 2. Administrator area - nice and smooth
 
 == Changelog ==
+
+= 1.7 =
+* Reworked the admin section
+* New template: metro blue
+
+= 1.6 =
+* Removed an unnecessary link
 
 = 1.5 =
 * Stripping shortcodes from results content
