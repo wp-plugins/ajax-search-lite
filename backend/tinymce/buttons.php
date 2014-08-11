@@ -1,5 +1,5 @@
 <?php
-
+return;
 // Hooks your functions into the correct filters
 add_action('admin_head', 'wpdreams_asl_add_mce_button');
 function wpdreams_asl_add_mce_button() {
