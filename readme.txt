@@ -3,8 +3,8 @@ Contributors: wpdreams
 Donate link: http://wp-dreams.com
 Tags: search, better wordpress search, better search plugin, ajax search, better search, wp search, wp search plugin, relevant search plugin, search plugin, wordpress search, advanced search, best wordpress search, ajax wordpress search, ajax search pro
 Requires at least: 3.5
-Tested up to: 3.8
-Stable tag: 1.7
+Tested up to: 3.9.2
+Stable tag: 3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,41 +13,51 @@ A powerful ajax search engine for WordPress.
 == Description ==
 
 A resonsive search engine, which will boost your user experience by providing a user friendly ajax powered search form. Very smooth animations with mobile device support.
-Boost the user experience by providing a powerful ajax search plugin to your visitors. It will rock!
+Boost the user experience by providing a powerful ajax search plugin to your visitors. It will rock your site!
 
-Demo: http://wp-dreams.com/ajax-search-lite/
+Facebook: https://www.facebook.com/pages/WPDreams/383702515034741
 
-Like us on facebook: https://www.facebook.com/pages/WPDreams/383702515034741
+Twitter: https://twitter.com/ernest_marcinko
 
 **Features List:**
 
 * Search in posts and pages
-* 3 built in templates
+* Search in custom post types
+* Search in title, description, excerpt and custom fields
+* WPML and Qtranslate compatible
+* 5 built in templates
+* Retina ready vectorized SVG icons
+* Category and post exclusions
 * Frontend search settings boxes
 * Images in search results
 * Fully ajax powered
-* Uses custom built jQuery for maximum compatibility
+* 40+ options on the backend
+* Google analytics integration
 * Caches images for faster response time
 
 Homepage: [wp-dreams.com](http://wp-dreams.com)
 
-Pro version Demo:  [Ajax Search Pro](http://wp-ajaxsearchpro2.demo.wp-dreams.com)
+Pro version Demo:  [Ajax Search Pro](http://demo.wp-dreams.com/?product=ajax_search_pro)
 
-**New In pro version 2.0 (2014.01.10):**
+**New In pro version 2.0 (2014.08.10):**
 
-* Demo: [Ajax Search Pro](http://wp-ajaxsearchpro2.demo.wp-dreams.com)
+* Frontend Demo: [Ajax Search Pro](http://demo.wp-dreams.com/?product=ajax_search_pro)
 * Search in BuddyPress, BBPress, JigoShop, Woocommerce
-* qTranslate ready
 * Search result grouping by categories or post types
-* Search in any custom post types
 * Responsive design
 * Search in custom fields
 * Advanced caching technology - image precaching, search phrase caching
 * Category selectors on the frontend – It’s now possible to filter the posts by categories
 * Post grouping by category or post type!
 * Search in comments
-* 65+ Themes - Fully configurable and editable, INFINITE variations!
-* 100+ Admin options                                                    
+* 65+ Themes - Fully configurable and editable - with theme customizer & preview window
+* 4 layouts: Vertical, Horizontal, Polaroid and Isotopic (with pagination)
+* 250+ Admin options                                                    
+* Google keyword suggestions and autofill
+* Compatibility options and features
+* Caching options & Search statistics
+* Keyword Highlighting & more...
+* Full features list: [Full Features List](http://wp-dreams.com/demo/wp-ajax-search-pro3/full-features-list/)
 
 == Installation ==
 
@@ -87,6 +97,17 @@ and will let you know what to do.
 2. Administrator area - nice and smooth
 
 == Changelog ==
+
+= 3.0 =
+* Fully reworked from version 1.7
+* Added 30+ more options & much nicer options panel
+* Brand new themes: Simple, Classic and Underline
+* Google analytics integration
+* Now possible to search custom post types
+* Possible to search custom fields and excerpts
+* Possible to exclude categories and posts by ID-s
+* Possible to change image sources and set a default image
+* Possible to add custom field and category selectors to the frontend
 
 = 1.7 =
 * Reworked the admin section
