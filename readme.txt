@@ -39,7 +39,7 @@ Homepage: [wp-dreams.com](http://wp-dreams.com)
 
 Pro version Demo:  [Ajax Search Pro](http://demo.wp-dreams.com/?product=ajax_search_pro)
 
-**New In pro version 2.0 (2014.08.10):**
+**New In pro version 3.0 (2014.08.10):**
 
 * Frontend Demo: [Ajax Search Pro](http://demo.wp-dreams.com/?product=ajax_search_pro)
 * Search in BuddyPress, BBPress, JigoShop, Woocommerce
