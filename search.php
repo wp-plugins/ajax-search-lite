@@ -109,7 +109,7 @@ function ajaxsearchlite_search() {
     );
 
 
-    if (count($results) <= 0) {
+    /*if (count($results) <= 0) {
         $t = new keywordSuggest($search['data']['keywordsuggestionslang']);
         $keywords = $t->getKeywords($s);
         if ($keywords != false) {
@@ -117,7 +117,7 @@ function ajaxsearchlite_search() {
             $results['nores'] = 1;
             $results = apply_filters('asl_only_keyword_results', $results);
         }
-    }
+    }*/
 
     $results = apply_filters('asl_results', $results);
 
