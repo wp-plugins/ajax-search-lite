@@ -4,7 +4,7 @@ Donate link: http://wp-dreams.com
 Tags: search, better wordpress search, better search plugin, ajax search, better search, wp search, wp search plugin, relevant search plugin, search plugin, wordpress search, advanced search, best wordpress search, ajax wordpress search, ajax search pro
 Requires at least: 3.5
 Tested up to: 3.9.2
-Stable tag: 3.0
+Stable tag: 3.05
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -97,6 +97,9 @@ and will let you know what to do.
 2. Administrator area - nice and smooth
 
 == Changelog ==
+
+= 3.05 =
+* Hotfix for disabled categories
 
 = 3.0 =
 * Fully reworked from version 1.7
