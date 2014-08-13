@@ -66,9 +66,5 @@ if (is_admin() || (!is_admin() && !isset($_POST['action_']))) {
 }
 
 /* Includes on Post/Page/Custom post type edit pages */
-if (wpdreams_on_backend_post_editor()) {
-    require_once(ASL_PATH . "/backend/settings/types.inc.php");
-    require_once(ASL_PATH . "/backend/tinymce/buttons.php");
-}
 
 require_once(ASL_PATH . "/includes/widgets.php");
