@@ -38,7 +38,7 @@ if (!class_exists('wpdreams_search')) {
     }
     
     public function search($keyword) {
-      $this->s = $keyword;
+      $this->s = mb_convert_case($keyword, MB_CASE_LOWER, "UTF-8");
       $this->_s = explode(" ", $this->s);
             
       $this->do_search();
