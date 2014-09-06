@@ -1,9 +1,9 @@
-=== Ajax Search Lite ===
+﻿=== Ajax Search Lite ===
 Contributors: wpdreams
 Donate link: http://wp-dreams.com
 Tags: search, better wordpress search, better search plugin, ajax search, wp ajax search, custom fields search, custom field ajax, better search, wp search, wp search plugin, relevant search plugin, search plugin, wordpress search, advanced search, best wordpress search, ajax wordpress search, ajax search pro
 Requires at least: 3.5
-Tested up to: 3.9.2
+Tested up to: 4.0
 Stable tag: 3.05
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

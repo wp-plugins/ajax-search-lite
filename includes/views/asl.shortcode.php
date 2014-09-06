@@ -77,6 +77,8 @@
     <?php do_action('asl_layout_after_loading', $id); ?>
 
 </div>
+</div>
+
 <div id='ajaxsearchlitesettings<?php echo $id; ?>' class="searchsettings">
     <form name='options'>
 
