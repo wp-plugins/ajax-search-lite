@@ -1,10 +1,10 @@
-﻿=== Ajax Search Lite ===
+=== Ajax Search Lite ===
 Contributors: wpdreams
 Donate link: http://wp-dreams.com
 Tags: search, better wordpress search, better search plugin, ajax search, wp ajax search, custom fields search, custom field ajax, better search, wp search, wp search plugin, relevant search plugin, search plugin, wordpress search, advanced search, best wordpress search, ajax wordpress search, ajax search pro
 Requires at least: 3.5
 Tested up to: 4.0
-Stable tag: 3.05
+Stable tag: 3.06
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,10 +39,12 @@ Homepage: [wp-dreams.com](http://wp-dreams.com)
 
 Pro version Demo:  [Ajax Search Pro](http://demo.wp-dreams.com/?product=ajax_search_pro)
 
-**New In pro version 3.0 (2014.08.10):**
+**New In pro version 3.1 (2014.09.19):**
 
 * Frontend Demo: [Ajax Search Pro](http://demo.wp-dreams.com/?product=ajax_search_pro)
+* The search now can affect the default WordPress search results
 * Search in BuddyPress, BBPress, JigoShop, Woocommerce
+* Search in BuddyPress activity feed, users and group names
 * Search result grouping by categories or post types
 * Responsive design
 * Search in custom fields
@@ -97,6 +99,12 @@ and will let you know what to do.
 2. Administrator area - nice and smooth
 
 == Changelog ==
+
+= 3.06 =
+* Fixed long label names in frontend settings dropdown
+* Title and description substrings at word endings
+* Removed an unneccessary CSS rule
+* Fixed a bug with custom post type names
 
 = 3.05 =
 * Hotfix for disabled categories
