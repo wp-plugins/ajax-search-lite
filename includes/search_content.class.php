@@ -287,7 +287,7 @@ if (!class_exists('wpdreams_searchContent')) {
                 } else {
                     if ($searchData['titlefield'] == "1") {
                         if (strlen($r->excerpt) >= 200)
-                            $r->title = substr($r->excerpt, 0, 200);
+                            $r->title = wd_substr_at_word($r->excerpt, 200);
                         else
                             $r->title = $r->excerpt;
                     } else {
@@ -329,7 +329,7 @@ if (!class_exists('wpdreams_searchContent')) {
                 $_content = strip_tags($_content, "<abbr><span>");
 
                 if ($_content != '' && (strlen($_content) > $searchData['descriptionlength']))
-                    $r->content = substr($_content, 0, $searchData['descriptionlength']) . "...";
+                    $r->content = wd_substr_at_word($_content, $searchData['descriptionlength']) . "...";
                 else
                     $r->content = $_content . "...";
 
