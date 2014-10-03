@@ -1,0 +1,1419 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300|Open+Sans:400|Open+Sans:700);
+
+/* General css reset */
+
+div[id*='ajaxsearchlite'],
+div[id*='ajaxsearchlite'] *,
+div[id*='ajaxsearchliteres'],
+div[id*='ajaxsearchliteres'] *,
+div[id*='ajaxsearchlitesettings'],
+div[id*='ajaxsearchlitesettings'] * {
+    -webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: content-box; /* Firefox, other Gecko */
+    -ms-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    text-transform: none;
+    text-shadow: none;
+    box-shadown: none;
+    text-decoration: none;
+    text-align: left;
+    letter-spacing: normal;
+}
+
+div[id*='ajaxsearchliteres'],
+div[id*='ajaxsearchliteres'] * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div[id*='ajaxsearchlite'] input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+div[id*='ajaxsearchlite'] input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+div[id*='ajaxsearchlite'] input[type="search"]::-webkit-search-decoration,
+div[id*='ajaxsearchlite'] input[type="search"]::-webkit-search-cancel-button,
+div[id*='ajaxsearchlite'] input[type="search"]::-webkit-search-results-button,
+div[id*='ajaxsearchlite'] input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.clear {
+    clear: both;
+}
+
+.hiddend {
+    display: none;
+}
+
+div[id*='ajaxsearchlite'] textarea:focus,
+div[id*='ajaxsearchlite'] input:focus {
+    outline: none;
+}
+
+div[id*='ajaxsearchlite'] {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0);
+    overflow: hidden;
+}
+
+div[id*='ajaxsearchlite'] .probox {
+    width: auto;
+    border-radius: 5px;
+    background: #FFF;
+    overflow: hidden;
+    border: 1px solid #FFF;
+    box-shadow: 1px 0 3px #CCCCCC inset;
+}
+
+div[id*='ajaxsearchlite'] .probox .proinput {
+    width: auto;
+    height: 100%;
+    margin: 2px 0px 0px 10px;
+    padding: 0 5px;
+    float: left;
+    box-shadow: none;
+    position: relative;
+}
+
+div[id*='ajaxsearchlite'] .probox .proinput input {
+    height: 100%;
+    border: 0px;
+    background: transparent;
+    width: 100%;
+    box-shadow: none;
+    margin: -1px;
+    padding: 0;
+    left: 0;
+}
+
+div[id*='ajaxsearchlite'] .probox .proinput input.autocomplete {
+    border: 0px;
+    background: transparent;
+    width: 100%;
+    box-shadow: none;
+    margin: -1px;
+    padding: 0;
+    left: 0;
+}
+
+div[id*='ajaxsearchlite'] .probox .proinput.iepaddingfix {
+    padding-top: 0;
+}
+
+div[id*='ajaxsearchlite'] .probox .proinput .loading {
+    width: 32px;
+    background: #000;
+    height: 100%;
+    box-shadow: none;
+}
+
+div[id*='ajaxsearchlite'] .probox .proloading,
+div[id*='ajaxsearchlite'] .probox .proclose,
+div[id*='ajaxsearchlite'] .probox .promagnifier,
+div[id*='ajaxsearchlite'] .probox .prosettings {
+    width: 20px;
+    height: 20px;
+    background: none;
+    background-size: 20px 20px;
+    float: right;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+div[id*='ajaxsearchlite'] .probox .proloading,
+div[id*='ajaxsearchlite'] .probox .proclose {
+    background-position: center center;
+    display: none;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+div[id*='ajaxsearchlite'] .probox .proclose {
+    position: relative;
+    cursor: pointer;
+}
+
+div[id*='ajaxsearchlite'] .probox .promagnifier .innericon,
+div[id*='ajaxsearchlite'] .probox .prosettings .innericon,
+div[id*='ajaxsearchlite'] .probox .proclose .innericon {
+    background-size: 20px 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+div[id*='ajaxsearchlite'] .probox .promagnifier .innericon svg,
+div[id*='ajaxsearchlite'] .probox .prosettings .innericon svg,
+div[id*='ajaxsearchlite'] .probox .proloading svg {
+    height: 100%;
+    width: 22px;
+    vertical-align: baseline;
+    display: inline-block;
+}
+
+div[id*='ajaxsearchlite'] .probox .proloading.asl_msie svg {
+    height: 0;
+    width: 0;
+    display: none;
+}
+
+
+div[id*='ajaxsearchlite'] .probox .proclose svg  {
+    background: #333333;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    fill: #fefefe;
+    padding: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.9);
+}
+
+
+div[id*='ajaxsearchliteres'] * {
+    text-decoration: none;
+    text-shadow: none;
+}
+
+div[id*='ajaxsearchliteres'] .results .nores {
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+    line-height: initial;
+    text-align: center;
+    margin: 0;
+    background: #FFF;
+    padding: 10px 3px;
+    color: #222;
+}
+
+div[id*='ajaxsearchliteres'].horizontal {
+    padding: 2px 0 10px;
+}
+
+div[id*='ajaxsearchliteres'].horizontal .results .nores {
+    background: transparent;
+}
+
+div[id*='ajaxsearchliteres'] .results {
+    overflow: hidden;
+    width: auto;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+div[id*='ajaxsearchliteres'].horizontal .results {
+    height: auto;
+    width: auto;
+}
+
+div[id*='ajaxsearchliteres'] .results .item {
+    overflow: hidden;
+    width: auto;
+    margin: 0;
+    padding: 3px;
+    position: relative;
+    background: #f4f4f4;
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+    backface-visibility: hidden;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-timing-function: ease;
+    -webkit-backface-visibility: hidden;
+}
+
+div[id*='ajaxsearchliteres'].vertical .results .item:first-child {
+    border-radius: 3px 3px 0 0;
+}
+
+div[id*='ajaxsearchliteres'].vertical .results .item:last-child {
+    border-radius: 0 0 3px 3px;
+    margin-bottom: 0px;
+}
+
+div[id*='ajaxsearchliteres'].vertical .results .item:after {
+    background: none repeat scroll 0 0 #CCCCCC;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 2px -10px;
+    width: 10000px;
+}
+
+div[id*='ajaxsearchliteres'].vertical .results .item:last-child:after {
+    height: 0;
+    margin: 0;
+    width: 0;
+}
+
+div[id*='ajaxsearchliteres'] .results .item .image {
+    overflow: hidden;
+    background: transparent;
+    margin: 1px auto 0px -3px;
+    padding: 0;
+    float: left;
+}
+
+div[id*='ajaxsearchliteres'] .results .item .image img {
+    width: 100%;
+    height: 100%;
+}
+
+div[id*='ajaxsearchliteres'].horizontal .results .item .content {
+    height: auto;
+    width: 100%;
+    padding: 0;
+}
+
+div[id*='ajaxsearchliteres'] .results a span.overlap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+div[id*='ajaxsearchliteres'] .resdrg {
+    height: auto;
+}
+
+div[id*='ajaxsearchliteres'].horizontal .resdrg {
+    height: auto;
+    width: auto;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_container {
+    width: auto;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_container.mCS_no_scrollbar {
+    margin-right: 0;
+}
+
+div[id*='ajaxsearchlite'] .mCustomScrollBox .mCSB_scrollTools {
+    width: 16px;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_draggerContainer {
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonUp + .mCSB_draggerContainer {
+    padding-bottom: 40px;
+    margin-top: 20px;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_draggerRail {
+    width: 2px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_dragger {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 6px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+    height: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonUp,
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonDown {
+    height: 20px;
+    -overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonDown {
+    bottom: 0;
+    margin-top: -40px;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_horizontal .mCSB_container {
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_horizontal .mCSB_container.mCS_no_scrollbar {
+    margin-bottom: 0;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_horizontal.mCustomScrollBox .mCSB_scrollTools {
+    width: 100%;
+    height: 26px;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_horizontal .mCSB_scrollTools .mCSB_draggerContainer {
+    height: 23px;
+    width: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_horizontal .mCSB_scrollTools .mCSB_buttonLeft + .mCSB_draggerContainer {
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_horizontal .mCSB_scrollTools .mCSB_draggerRail {
+    width: 100%;
+    height: 2px;
+    margin: 7px 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_horizontal .mCSB_scrollTools .mCSB_dragger {
+    width: 30px;
+    height: 100%;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_horizontal .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 100%;
+    height: 4px;
+    margin: 6px auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_horizontal .mCSB_scrollTools .mCSB_buttonLeft,
+div[id*='ajaxsearchlite'] .mCSB_horizontal .mCSB_scrollTools .mCSB_buttonRight {
+    width: 20px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+    float: left;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_horizontal .mCSB_scrollTools .mCSB_buttonRight {
+    right: 0;
+    bottom: auto;
+    margin-left: -40px;
+    margin-top: -16px;
+    float: right;
+}
+
+div[id*='ajaxsearchlite'] .mCustomScrollBox .mCSB_scrollTools {
+    opacity: 0.75;
+}
+
+div[id*='ajaxsearchlite'] .mCustomScrollBox:hover .mCSB_scrollTools {
+    opacity: 1;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_draggerRail {
+    background: #000; /* rgba fallback */
+    background: rgba(0, 0, 0, 0.4);
+    filter: "alpha(opacity=40)";
+    -ms-filter: "alpha(opacity=40)"; /* old ie */
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonUp,
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonDown,
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonLeft,
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonRight {
+    padding: 10px 0 0 0;
+    background: 0;
+    opacity: 0.4;
+    filter: "alpha(opacity=40)";
+    -ms-filter: "alpha(opacity=40)"; /* old ie */
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonDown {
+    height: 0;
+    position: relative;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonDown:after {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonUp {
+    position: relative;
+    margin: 10px 0 0 0;
+    height: 0;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonUp:after {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonUp {
+    background-position: 0 0;
+    /*
+    sprites locations are 0 0/-16px 0/-32px 0/-48px 0 (light) and -80px 0/-96px 0/-112px 0/-128px 0 (dark)
+    */
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonDown {
+    background-position: 0 -20px;
+    /*
+    sprites locations are 0 -20px/-16px -20px/-32px -20px/-48px -20px (light) and -80px -20px/-96px -20px/-112px -20px/-128px -20px (dark)
+    */
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: 0 -40px;
+    /*
+    sprites locations are 0 -40px/-20px -40px/-40px -40px/-60px -40px (light) and -80px -40px/-100px -40px/-120px -40px/-140px -40px (dark)
+    */
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonRight {
+    background-position: 0 -56px;
+    /*
+    sprites locations are 0 -56px/-20px -56px/-40px -56px/-60px -56px (light) and -80px -56px/-100px -56px/-120px -56px/-140px -56px (dark)
+    */
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonUp:hover,
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonDown:hover,
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonLeft:hover,
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonRight:hover {
+    opacity: 0.75;
+    filter: "alpha(opacity=75)";
+    -ms-filter: "alpha(opacity=75)"; /* old ie */
+}
+
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonUp:active,
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonDown:active,
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonLeft:active,
+div[id*='ajaxsearchlite'] .mCSB_scrollTools .mCSB_buttonRight:active {
+    opacity: 0.9;
+    filter: "alpha(opacity=90)";
+    -ms-filter: "alpha(opacity=90)"; /* old ie */
+}
+
+div[id*='ajaxsearchlite'] .group:first-of-type {
+    margin: 0px 0 -3px;
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    display: none;
+    z-index: 1101;
+    border-radius: 0 0 3px 3px;
+    visibility: hidden;
+    padding: 0 0 8px 0;
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings .option {
+    margin: 10px;
+    *padding-bottom: 10px;
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings.ie78 .option {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings .label {
+    font-size: 14px;
+    line-height: 20px !important;
+    margin: -29px 10px 0 38px;
+    width: 150px;
+    text-shadow: none;
+    padding: 0;
+    min-height: 20px;
+    border: none;
+    background: transparent;
+    float: none;
+}
+
+/* SQUARED THREE */
+div[id*='ajaxsearchlitesettings'].searchsettings .option input[type=checkbox] {
+    display: none;
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings.ie78 .option input[type=checkbox] {
+    display: block;
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings.ie78 .label {
+    float: right !important;
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings .option {
+    width: 17px;
+    height: 17px;
+    position: relative;
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings .option label {
+    cursor: pointer;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 0;
+    padding: 0;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, .4);
+    -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, .4);
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, .4);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#222222', endColorstr='#45484d', GradientType=0);
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings.ie78 .option label {
+    display: none;
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings .option label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: "";
+    position: absolute;
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    box-sizing: content-box;
+
+    height: 3px;
+    left: 4px;
+    top: 5px;
+    width: 6px;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings.ie78 .option label:after {
+    display: none;
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings .option label:hover::after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings .option input[type=checkbox]:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings fieldset {
+    position: relative;
+    float: left;
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings fieldset {
+    background: transparent;
+    font-size: 0.9em;
+    margin: 5px 0 0;
+    padding: 0px;
+    width: 192px;
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings fieldset .label {
+    width: 130px;
+    display: block;
+}
+
+/* basic scrollbar styling */
+/* vertical scrollbar */
+.results .mCSB_container {
+    width: auto;
+    margin-right: 30px;
+    overflow: hidden;
+}
+
+.results .mCSB_container.mCS_no_scrollbar {
+    margin-right: 0;
+}
+
+.results .mCS_disabled > .mCustomScrollBox > .mCSB_container.mCS_no_scrollbar,
+.results .mCS_destroyed > .mCustomScrollBox > .mCSB_container.mCS_no_scrollbar {
+    margin-right: 30px;
+}
+
+.results .mCustomScrollBox > .mCSB_scrollTools {
+    width: 16px;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.results .mCSB_scrollTools .mCSB_draggerContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+}
+
+.results .mCSB_scrollTools a + .mCSB_draggerContainer {
+    margin: 20px 0;
+}
+
+.results .mCSB_scrollTools .mCSB_draggerRail {
+    width: 2px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.results .mCSB_scrollTools .mCSB_dragger {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+}
+
+.results .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 4px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.results .mCSB_scrollTools .mCSB_buttonUp,
+.results .mCSB_scrollTools .mCSB_buttonDown {
+    display: block;
+}
+
+.results .mCSB_scrollTools .mCSB_buttonDown {
+    top: 100%;
+    margin-top: -40px;
+}
+
+/* horizontal scrollbar */
+.results .mCSB_horizontal > .mCSB_container {
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.results .mCSB_horizontal > .mCSB_container.mCS_no_scrollbar {
+    margin-bottom: 0;
+}
+
+.results .mCS_disabled > .mCSB_horizontal > .mCSB_container.mCS_no_scrollbar,
+.results .mCS_destroyed > .mCSB_horizontal > .mCSB_container.mCS_no_scrollbar {
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+
+.results .mCSB_horizontal.mCustomScrollBox > .mCSB_scrollTools {
+    width: 100%;
+    height: 16px;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.results .mCSB_horizontal > .mCSB_scrollTools a + .mCSB_draggerContainer {
+    margin: 0 20px;
+}
+
+.results .mCSB_horizontal > .mCSB_scrollTools .mCSB_draggerRail {
+    width: 100%;
+    height: 2px;
+    margin: 7px 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.results .mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger {
+    width: 30px;
+    height: 100%;
+}
+
+.results .mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 100%;
+    height: 4px;
+    margin: 6px auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.results .mCSB_horizontal > .mCSB_scrollTools .mCSB_buttonLeft,
+.results .mCSB_horizontal > .mCSB_scrollTools .mCSB_buttonRight {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+    float: left;
+}
+
+.results .mCSB_horizontal > .mCSB_scrollTools .mCSB_buttonRight {
+    margin-left: -40px;
+    float: right;
+}
+
+.results .mCustomScrollBox {
+    -ms-touch-action: none; /*MSPointer events - direct all pointer events to js*/
+}
+
+/* default scrollbar colors and backgrounds (default theme) */
+.results .mCustomScrollBox > .mCSB_scrollTools {
+    opacity: 0.75;
+    filter: "alpha(opacity=75)";
+    -ms-filter: "alpha(opacity=75)"; /* old ie */
+}
+
+div[id*='ajaxsearchlitesettings'] .mCustomScrollBox:hover > .mCSB_scrollTools,
+.results .mCustomScrollBox:hover > .mCSB_scrollTools {
+    opacity: 1;
+    filter: "alpha(opacity=100)";
+    -ms-filter: "alpha(opacity=100)"; /* old ie */
+}
+
+div[id*='ajaxsearchlitesettings'] .mCSB_scrollTools .mCSB_draggerRail,
+.results .mCSB_scrollTools .mCSB_draggerRail {
+    background: #000; /* rgba fallback */
+    background: rgba(0, 0, 0, 0.4);
+    filter: "alpha(opacity=40)";
+    -ms-filter: "alpha(opacity=40)"; /* old ie */
+}
+
+div[id*='ajaxsearchlitesettings'] .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.results .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #fff; /* rgba fallback */
+    background: rgba(255, 255, 255, 1);
+    filter: "alpha(opacity=100)";
+    -ms-filter: "alpha(opacity=100)"; /* old ie */
+}
+
+.results .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background: rgba(255, 255, 255, 0.85);
+    filter: "alpha(opacity=85)";
+    -ms-filter: "alpha(opacity=85)"; /* old ie */
+}
+
+.results .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.results .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background: rgba(255, 255, 255, 0.9);
+    filter: "alpha(opacity=90)";
+    -ms-filter: "alpha(opacity=90)"; /* old ie */
+}
+
+.results .mCSB_scrollTools .mCSB_buttonUp {
+    background-position: 0 0;
+    /*
+    sprites locations are 0 0/-16px 0/-32px 0/-48px 0 (light) and -80px 0/-96px 0/-112px 0/-128px 0 (dark)
+    */
+}
+
+.results .mCSB_scrollTools .mCSB_buttonDown {
+    background-position: 0 -20px;
+    /*
+    sprites locations are 0 -20px/-16px -20px/-32px -20px/-48px -20px (light) and -80px -20px/-96px -20px/-112px -20px/-128px -20px (dark)
+    */
+}
+
+.results .mCSB_scrollTools .mCSB_buttonLeft {
+    /*
+  background-position:0 -40px;
+
+    sprites locations are 0 -40px/-20px -40px/-40px -40px/-60px -40px (light) and -80px -40px/-100px -40px/-120px -40px/-140px -40px (dark)
+    */
+}
+
+div[id*='ajaxsearchliteres'] {
+    position: absolute !important;
+}
+
+div[id*="ajaxsearchlite"] .probox .proloading.asl_msie {
+    background-image: url("../img/ie.gif");
+}
+
+div[id*='ajaxsearchliteres'].isotopic>nav,
+div[id*='ajaxsearchliteres'].isotopic nav.asl_navigation {
+    display: none;
+    background: rgba(255, 255, 255, 0.6);
+    margin: 2px 3px;
+}
+
+div[id*='ajaxsearchliteres'].isotopic nav.asl_navigation a svg {
+    -webkit-backface-visibility: hidden;
+}
+
+div[id*='ajaxsearchliteres'].isotopic nav.asl_navigation a.asl_prev,
+div[id*='ajaxsearchliteres'].isotopic nav.asl_navigation a.asl_next {
+    background: #3F3F3F;
+    height: 36px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+div[id*='ajaxsearchliteres'].isotopic nav.asl_navigation a.asl_prev,
+div[id*='ajaxsearchliteres'].isotopic nav.asl_navigation ul {
+    float: left;
+}
+
+div[id*='ajaxsearchliteres'].isotopic nav.asl_navigation a.asl_next {
+    float: right;
+}
+
+div[id*='ajaxsearchliteres'].isotopic nav.asl_navigation a.asl_prev svg,
+div[id*='ajaxsearchliteres'].isotopic nav.asl_navigation a.asl_next svg {
+    fill: #eee;
+    height: 100%;
+    width: 18px;
+}
+
+div[id*='ajaxsearchliteres'].isotopic nav.asl_navigation a.asl_prev svg {
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+
+
+div[id*='ajaxsearchliteres'].isotopic nav.asl_navigation ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+    text-align: center;
+}
+
+div[id*='ajaxsearchliteres'].isotopic nav.asl_navigation ul li.asl_active {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+div[id*='ajaxsearchliteres'].isotopic nav.asl_navigation ul li:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+div[id*='ajaxsearchliteres'].isotopic nav.asl_navigation ul li span {
+    font-family: sans-serif;
+    font-size: 11px;
+    vertical-align: middle;
+    color: #333;
+    line-height: 36px;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+div[id*='ajaxsearchliteres'].horizontal .results .mCSB_scrollTools .mCSB_buttonLeft,
+div[id*='ajaxsearchlitesettings'] .mCSB_scrollTools .mCSB_buttonLeft {
+    position: relative;
+    background: transparent;
+    margin-left: 9px;
+}
+
+div[id*='ajaxsearchliteres'].horizontal .results .mCSB_scrollTools .mCSB_buttonLeft:after,
+div[id*='ajaxsearchlitesettings'] .mCSB_scrollTools .mCSB_buttonLeft:after {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+div[id*='ajaxsearchliteres'].horizontal .results .mCSB_scrollTools .mCSB_buttonRight,
+div[id*='ajaxsearchlitesettings'] .mCSB_scrollTools .mCSB_buttonRight {
+    position: relative;
+    background: transparent;
+    margin-right: 9px;
+    margin-top: 0px;
+}
+
+div[id*='ajaxsearchliteres'].horizontal .results .mCSB_scrollTools .mCSB_buttonRight:after,
+div[id*='ajaxsearchlitesettings'] .mCSB_scrollTools .mCSB_buttonRight:after {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+div[id*='ajaxsearchliteres'] .results .mCSB_horizontal > .mCSB_scrollTools a + .mCSB_draggerContainer {
+    margin: 10px 12px 0 36px
+}
+
+.results .mCSB_scrollTools .mCSB_buttonRight {
+    background-position: 0 -56px;
+    /*
+    sprites locations are 0 -56px/-20px -56px/-40px -56px/-60px -56px (light) and -80px -56px/-100px -56px/-120px -56px/-140px -56px (dark)
+    */
+}
+
+div[id*='ajaxsearchlitesettings'] .mCSB_scrollTools .mCSB_buttonUp:hover,
+div[id*='ajaxsearchlitesettings'] .mCSB_scrollTools .mCSB_buttonDown:hover,
+div[id*='ajaxsearchlitesettings'] .mCSB_scrollTools .mCSB_buttonLeft:hover,
+div[id*='ajaxsearchlitesettings'] .mCSB_scrollTools .mCSB_buttonRight:hover,
+.results .mCSB_scrollTools .mCSB_buttonUp:hover,
+.results .mCSB_scrollTools .mCSB_buttonDown:hover,
+.results .mCSB_scrollTools .mCSB_buttonLeft:hover,
+.results .mCSB_scrollTools .mCSB_buttonRight:hover {
+    opacity: 0.75;
+    filter: "alpha(opacity=75)";
+    -ms-filter: "alpha(opacity=75)"; /* old ie */
+}
+
+div[id*='ajaxsearchlitesettings'] .mCSB_scrollTools .mCSB_buttonUp:active,
+div[id*='ajaxsearchlitesettings'] .mCSB_scrollTools .mCSB_buttonDown:active,
+div[id*='ajaxsearchlitesettings'] .mCSB_scrollTools .mCSB_buttonLeft:active,
+div[id*='ajaxsearchlitesettings'] .mCSB_scrollTools .mCSB_buttonRight:active,
+.results .mCSB_scrollTools .mCSB_buttonUp:active,
+.results .mCSB_scrollTools .mCSB_buttonDown:active,
+.results .mCSB_scrollTools .mCSB_buttonLeft:active,
+.results .mCSB_scrollTools .mCSB_buttonRight:active {
+    opacity: 0.9;
+    filter: "alpha(opacity=90)";
+    -ms-filter: "alpha(opacity=90)"; /* old ie */
+}
+
+/* Isotopic styles */
+div[id*='ajaxsearchliteres'].isotopic .results .item  {
+    width: 193px;
+    height: 193px;
+    margin: 3px;
+    background-size: 100% 100%;
+    border: 0;
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+}
+
+div[id*='ajaxsearchliteres'].isotopic .results .item .content  {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    border: 0;
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+    box-sizing: border-box;
+    z-index: 3;
+    padding: 4px 6px;
+}
+
+div[id*='ajaxsearchliteres'].isotopic .results .item .asl_item_img+.content  {
+    height: auto;
+    top: auto;
+    bottom: 0;
+}
+
+div[id*='ajaxsearchliteres'].isotopic .results .item .asl_item_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+div[id*='ajaxsearchliteres'].isotopic .results .item .asl_item_overlay_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    filter: url('#aslblur');
+    -moz-filter: url('#aslblur');
+    -webkit-filter: url('#aslblur');
+    -ms-filter: url('#aslblur');
+    -o-filter: url('#aslblur');
+    display: none;
+    cursor: pointer;
+}
+
+#asl_hidden_data,
+#asl_hidden_data * {
+    display: none;
+}
+
+div[id*='ajaxsearchliteres'].isotopic .results .item .asl_item_overlay,
+div[id*='ajaxsearchliteres'].isotopic .results .item .asl_item_overlay_m{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 4;
+    cursor: pointer;
+}
+
+div[id*='ajaxsearchliteres'].isotopic .results .item .asl_item_overlay_m {
+    display: block;
+    background: transparent;
+}
+
+div[id*='ajaxsearchliteres'].isotopic .results .item .asl_item_inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin: -35px 0 0 -35px;
+    background: #ddd;
+    box-sizing: padding-box;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    z-index: 2;
+}
+
+div[id*='ajaxsearchliteres'].isotopic .results .item .asl_item_inner svg {
+    height: 100%;
+    width: 32px;
+    fill: #fff;
+}
+
+
+/* Polaroid stlyes */
+div[id*='ajaxsearchliteres'] .photostack,
+div[id*='ajaxsearchliteres'] .photostack * {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div[id*='ajaxsearchliteres'] .photostack {
+    background: transparent;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+div[id*='ajaxsearchliteres'] .photostack-start {
+    cursor: pointer;
+}
+
+div[id*='ajaxsearchliteres'] .photostack > div {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.js div[id*='ajaxsearchliteres'] .photostack figure {
+    position: absolute;
+    display: block;
+    margin: 0;
+}
+
+div[id*='ajaxsearchliteres'] .photostack-img {
+    outline: none;
+    display: block;
+    background: #f9f9f9;
+}
+
+div[id*='ajaxsearchliteres'] .photostack-img img {
+    width: 100%;
+    height: 100%;
+}
+
+div[id*='ajaxsearchliteres'] .photostack-back {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 50px 40px;
+    text-align: left;
+}
+
+div[id*='ajaxsearchliteres'] .photostack-back p {
+    margin: 0;
+}
+
+div[id*='ajaxsearchliteres'] .photostack-back p span {
+    text-decoration: line-through;
+}
+
+/* Navigation dots */
+div[id*='ajaxsearchliteres'] .photostack nav {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    z-index: 90;
+    text-align: center;
+    left: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+div[id*='ajaxsearchliteres'] .photostack-start nav {
+    opacity: 0;
+}
+
+div[id*='ajaxsearchliteres'] .photostack nav span {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: #aaa;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-transition: -webkit-transform 0.6s ease-in-out, background 0.3s;
+    transition: transform 0.6s ease-in-out, background 0.3s;
+    -webkit-transform: scale(0.48);
+    transform: scale(0.48);
+}
+
+div[id*='ajaxsearchliteres'] .photostack nav span:last-child {
+    margin-right: 0;
+}
+
+
+div[id*='ajaxsearchliteres'] .photostack nav span.current {
+    background: #888;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+div[id*='ajaxsearchliteres'] .photostack nav span.current.flip {
+    -webkit-transform: scale(1) rotateY(-180deg) translateZ(-1px);
+    transform: scale(1) rotateY(-180deg) translateZ(-1px);
+    background: #555;
+}
+
+div[id*='ajaxsearchliteres'] .photostack nav span.flippable::after {
+    opacity: 1;
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.js div[id*='ajaxsearchliteres'] .photostack::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    -webkit-transition: opacity 0.3s, visibility 0s 0.3s;
+    transition: opacity 0.3s, visibility 0s 0.3s;
+}
+
+.js div[id*='ajaxsearchliteres'] .photostack-start::before {
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+/* Button on photostack container */
+.js div[id*='ajaxsearchliteres'] .photostack::after {
+    content: 'View Gallery';
+    font-weight: 400;
+    position: absolute;
+    border: 3px solid #fff;
+    text-align: center;
+    white-space: nowrap;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    padding: 10px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.js div[id*='ajaxsearchliteres'] .photostack::before,
+.js div[id*='ajaxsearchliteres'] .photostack::after {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.js div[id*='ajaxsearchliteres'] .photostack-start::before,
+.js div[id*='ajaxsearchliteres'] .photostack-start:hover::after,
+.touch .photostack-start::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+div[id*='ajaxsearchliteres'] .photostack figure::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.05);
+    -webkit-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+
+/* Hide figure overlay when it becomes current */
+div[id*='ajaxsearchliteres'] figure.photostack-current::after {
+    -webkit-transition: opacity 0.6s, visibility 0s 0.6s;
+    transition: opacity 0.6s, visibility 0s 0.6s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Special classes for transitions and perspective */
+div[id*='ajaxsearchliteres'] .photostack-transition figure {
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+}
+
+div[id*='ajaxsearchliteres'] .photostack-perspective {
+    -webkit-perspective: 1800px;
+    perspective: 1800px;
+}
+
+div[id*='ajaxsearchliteres'] .photostack-perspective > div,
+div[id*='ajaxsearchliteres'] .photostack-perspective figure {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+div[id*='ajaxsearchliteres'] .photostack-perspective figure,
+div[id*='ajaxsearchliteres'] .photostack-perspective figure div {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+div[id*='ajaxsearchliteres'] .photostack-perspective figure.photostack-flip {
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.csstransformspreserve3d figure.photostack-flip .photostack-back {
+    -webkit-transform: rotateY(180deg) !important;
+    transform: rotateY(180deg) !important;
+    display: block !important;
+}
+
+.no-csstransformspreserve3d figure.photostack-showback .photostack-back {
+    display: block !important;
+}
+
+/* The no-JS fallback look does not need to be boring ;) */
+.no-js .photostack figure {
+    box-shadow: -2px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.no-js .photostack figure::after {
+    display: none !important;
+}
+
+.no-js .photostack figure:nth-child(3n) {
+    -webkit-transform: translateX(-10%) rotate(5deg) !important;
+    transform: translateX(-10%) rotate(5deg) !important;
+}
+
+.no-js .photostack figure:nth-child(3n-2) {
+    -webkit-transform: translateY(10%) rotate(-3deg) !important;
+    transform: translateY(10%) rotate(-3deg) !important;
+}
+
+/* Some custom styles for the demo */
+
+/* Since we don't have back sides for the first photo stack, we don't want the current dot to become too big */
+#photostack-1 nav span.current {
+    background: #888;
+    -webkit-transform: scale(0.61);
+    transform: scale(0.61);
+}
