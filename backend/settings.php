@@ -46,7 +46,7 @@ $_dk = 'asl_defaults';
                    readonly="readonly"/>
             <label class="shortcode">Search shortcode for templates:</label>
             <input type="text" class="shortcode"
-                   value="&lt;?php echo do_shortcode('[wpdreams_ajaxsearchlite'); ?&gt;"
+                   value="&lt;?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?&gt;"
                    readonly="readonly"/>
     </div>
     <div class="wpdreams-box">
