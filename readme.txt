@@ -1,10 +1,10 @@
-=== Ajax Search Lite ===
+﻿=== Ajax Search Lite ===
 Contributors: wpdreams
 Donate link: http://wp-dreams.com
 Tags: search, better wordpress search, search plugin, relevance, relevant search, better search plugin, ajax search, wp ajax search, custom fields search, custom field ajax, better search, ajax search plugin, wp search, wp search plugin, relevant search plugin, search plugin, wordpress search, advanced search, best wordpress search, ajax wordpress search, ajax search pro
 Requires at least: 3.5
-Tested up to: 4.0
-Stable tag: 3.06
+Tested up to: 4.1
+Stable tag: 3.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -99,6 +99,11 @@ and will let you know what to do.
 2. Administrator area - nice and smooth
 
 == Changelog ==
+
+= 3.1 =
+* Updated engine with full UTF8 charset support
+* Languages like chinese, persian are now searchable
+* Language files added
 
 = 3.06 =
 * Fixed long label names in frontend settings dropdown
