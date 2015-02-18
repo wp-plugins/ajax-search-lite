@@ -49,7 +49,15 @@ if (!class_exists('wpdreams_searchContent')) {
             /*----------------------- Title query ---------------------------*/
             if ($options['set_intitle']) {
                 $words = $options['set_exactonly']==1?$s:$_si;
-                $parts[] = "(lower($wpdb->posts.post_title) REGEXP '$words')";
+                //$parts[] = "(lower($wpdb->posts.post_title) REGEXP '$words')";
+                
+                    $op = 'OR';
+                    if (count($_s)>0)
+                        $_like = implode("%' ".$op." lower($wpdb->posts.post_title) LIKE '%", $words);
+                    else
+                        $_like = $s;
+                    $parts[] = "( lower($wpdb->posts.post_title) LIKE '%".$_like."%' )";
+                
                 $relevance_parts[] = "(case when
                 (lower($wpdb->posts.post_title) REGEXP '$words')
                  then 10 else 0 end)";
@@ -62,7 +70,15 @@ if (!class_exists('wpdreams_searchContent')) {
             /*---------------------- Content query --------------------------*/
             if ($options['set_incontent']) {
                 $words = $options['set_exactonly']==1?$s:$_si;
-                $parts[] = "(lower($wpdb->posts.post_content) REGEXP '$words')";
+                //$parts[] = "(lower($wpdb->posts.post_content) REGEXP '$words')";
+                
+                    $op = 'OR';
+                    if (count($_s)>0)
+                        $_like = implode("%' ".$op." lower($wpdb->posts.post_content) LIKE '%", $words);
+                    else
+                        $_like = $s;
+                    $parts[] = "( lower($wpdb->posts.post_content) LIKE '%".$_like."%' )";
+                
                 $relevance_parts[] = "(case when
                 (lower($wpdb->posts.post_content) REGEXP '$words')
                  then 7 else 0 end)";
