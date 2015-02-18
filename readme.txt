@@ -12,8 +12,8 @@ A powerful ajax search engine for WordPress.
 
 == Description ==
 
-A resonsive search engine, which will boost your user experience by providing a user friendly ajax powered search form - an ajax live search. Very smooth animations with mobile device support.
-Boost the user experience by providing a powerful ajax search plugin to your visitors. It will rock your site! Supports custom post types and custom fields as well. Boost your site search engine with this custom built live search engine.
+Ajax Search Lite - is a live search plugin for WordPress. This responsive live search engine, which will boost your user experience by providing a user friendly ajax powered search form - an ajax live search. Very smooth animations with mobile device support and regular updates.
+Fine-tune the user experience by providing a powerful ajax search plugin to your visitors. It will rock your site! Supports custom post types and custom fields as well. Boost your site search engine with this custom built live search engine.
 
 Facebook: https://www.facebook.com/pages/WPDreams/383702515034741
 
