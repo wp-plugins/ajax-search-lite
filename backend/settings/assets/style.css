@@ -1,0 +1,1249 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:300|PT+Sans:400|PT+Sans:700);
+
+.wpdreams,
+.wpdreams * {
+  font:normal 13px/100% 'PT Sans', Verdana,Tahoma,sans-serif;
+  padding: auto;
+  margin: auto;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  line-height: 18px;
+}
+
+#wpdreams .disabled {
+  opacity: .5;
+  position: relative;
+}
+
+#wpdreams .disabled::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: ' ';
+}
+
+.wpdreams b,
+.wpdreams strong {
+  font-weight: 700;
+}
+
+.wpdreams select {
+  background: #FFF;
+}
+
+.wpdreams script {
+  display: none !important;
+}
+
+#wpdreams .block {      
+  display: block;
+}
+
+#wpdreams .wpdreamsText {
+  display: inline-block;
+}
+
+#wpdreams hidden {
+  display: none;
+}
+
+#wpdreams div.triggerer {
+  display:none;
+}
+#wpdreams legend {
+	font-size:1.22em;
+	color:#444;
+  font-weight: 700;
+  margin: 0;
+}
+#wpdreams hr {
+	color:#eee;
+	background-color:#eee;
+	margin:10px 40px;
+	border:none;
+}
+#wpdreams .wpdreams-container {
+	overflow:hidden;
+}
+#wpdreams input, #wpdreams textarea, #wpdreams select {
+  border: 1px solid #E5E5E5;
+  box-shadow: none;
+  height: auto;
+  margin: 0 5px;
+  outline: 0 none;
+  padding: 3px;
+  width: 200px;
+}
+
+#wpdreams select {
+  width: auto;
+  max-width: 200px;
+}
+
+#wpdreams .wpdreamsTextSmall input,
+#wpdreams input.threedigit {
+  width: 45px;
+}
+#wpdreams select {
+	padding:2px;
+}
+#wpdreams input[type=radio] {
+    width: 5px;
+    height: 16px;
+}
+
+#preview {
+    padding:10px;
+    position:fixed;
+    z-index:1000;
+    background:#FFF;
+    bottom:-365px;
+    right:20px !important;
+    border:1px solid #ccc;
+    width:500px;
+    height:400px;
+    box-shadow: 0 0 16px -12px #000000;
+    -webkit-box-shadow: 0 0 16px -8px #000000;
+}
+
+#preview .data {
+  margin: 15px 0px;
+}
+
+.wpdreams-btn-settings,
+.wpdreams-btn-delete {
+    border-radius: 3px;
+    box-shadow: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline;
+    vertical-align: middle;
+    float: none;
+    margin: 6px 10px;
+    padding: 6px 16px 6px 35px;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.2s linear 0s;
+    background: url("icons/gear.png") no-repeat scroll 8px center #40A8B6;
+    box-shadow: 0px 10px 14px -13px #000000;
+    -webkit-box-shadow: 0px 10px 12px -13px #000000;
+}
+
+.wpdreams-btn-delete {
+    background: url("icons/cross.png") no-repeat scroll 8px center #B64540;
+}
+
+.wpdreams-btn-settings:hover,
+.wpdreams-btn-delete:hover {
+    color: #EEEEEE;
+}
+
+#preview a.maximise,
+#wpdreams a.maximise,
+#preview a.refresh,
+#wpdreams a.refresh,
+#wpdreams a.general,
+#wpdreams a.multisite,
+#wpdreams a.frontend,
+#wpdreams a.layout,
+#wpdreams a.autocomplete,
+#wpdreams a.theme,
+#wpdreams a.subtheme,
+#wpdreams a.advanced {
+  border-bottom-color: #3D3D3D;
+  border-radius: 3px;
+  box-shadow: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  float: none;
+  margin: 6px 10px;
+  padding: 6px 16px 6px 35px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.2s linear 0s;
+
+}
+
+#wpdreams a.cache,
+#wpdreams a.error,
+#wpdreams a.back,
+#wpdreams a.statistics {
+  cursor: pointer;
+  display: inline-block;
+  text-transform: none;
+  color: #3a424c;
+  margin: 6px 10px;
+  padding: 6px 16px 6px 35px;
+}
+
+#preview a.maximise:hover,
+#wpdreams a.maximise:hover,
+#preview a.refresh:hover,
+#wpdreams a.refresh:hover,
+#wpdreams a.back:hover,
+#wpdreams a.general:hover,
+#wpdreams a.multisite:hover,
+#wpdreams a.frontend:hover,
+#wpdreams a.layout:hover,
+#wpdreams a.autocomplete:hover,
+#wpdreams a.theme:hover,
+#wpdreams a.advanced:hover,
+#wpdreams a.advanced:hover,
+#wpdreams a.cache:hover,
+#wpdreams a.error:hover,
+#wpdreams a.statistics:hover {
+  opacity: 0.8;
+}
+
+#wpdreams a.back:active,
+#wpdreams a.general:active,
+#wpdreams a.multisite:active,
+#wpdreams a.frontend:active,
+#wpdreams a.layout:active,
+#wpdreams a.autocomplete:active,
+#wpdreams a.theme:active,
+#wpdreams a.advanced:active,
+#wpdreams a.cache:active,
+#wpdreams a.error:active,
+#wpdreams a.statistics:active  {
+  
+}
+#preview a.maximise,
+#wpdreams a.maximise {
+  background: url("icons/b-maximise.png") no-repeat scroll 5px 5px #63A69F;
+}
+
+#preview a.refresh,
+#wpdreams a.refresh {
+  background: url("icons/b-refresh.png") no-repeat scroll 5px 5px #7289A7;
+}
+
+#wpdreams a.back {
+  background: url("icons/b-back.png") no-repeat scroll 5px 5px transparent;
+}
+
+#wpdreams a.general {
+  background: url("icons/b-settings.png") no-repeat scroll 5px 5px #4095B6;
+}
+
+#wpdreams a.multisite {
+  background: url("icons/b-multisite.png") no-repeat scroll 5px 5px #4095B6;
+}
+
+#wpdreams a.frontend {
+  background: url("icons/b-frontend.png") no-repeat scroll 5px 5px #4095B6;
+}
+
+#wpdreams a.layout {
+  background: url("icons/b-layout.png") no-repeat scroll 5px 5px #4095B6;
+}
+
+#wpdreams a.autocomplete {
+  background: url("icons/b-bulb.png") no-repeat scroll 5px 5px #4095B6;
+}
+
+#wpdreams a.theme {
+  background: url("icons/b-eye.png") no-repeat scroll 5px 5px #4095B6;
+}
+
+#wpdreams a.subtheme {
+  background: none repeat scroll 0 0 #414D50;
+  font-size: 12px;
+  margin: 5px 1px 0 9px;
+  padding: 3px 8px;
+}
+
+#wpdreams a.subtheme.current {
+    box-shadow: none;
+}
+
+#wpdreams a.advanced {
+  background: url("icons/b-asettings.png") no-repeat scroll 5px 5px #4095B6;
+}
+
+#wpdreams a.cache {
+  background: url("icons/b-tray.png") no-repeat scroll 5px 5px transparent;
+}
+
+#wpdreams a.error {
+  background: url("icons/b-warning.png") no-repeat scroll 5px 5px transparent;
+}
+
+#wpdreams a.statistics {
+  background: url("icons/b-stat.png") no-repeat scroll 5px 5px transparent;
+}
+
+#wpdreams .sortablecontainer .ui-left {
+  text-align: left;
+  background: none repeat scroll 0 0 #FFFFFF !important;
+  border: 1px dotted #D3D3D3 !important;
+}
+
+#wpdreams .sortablecontainer input {
+  background: url("icons/pen.png") no-repeat scroll 7px 7px #FCFCFC;
+  border: 1px solid #EAEAEA;
+  border-radius: 0 3px 3px 3px;
+  box-shadow: none;
+  clear: both;
+  color: #666666;
+  font-family: 'Droid Sans',Helvetica,'Helvetica Neue',Arial,sans-serif;
+  height: 30px;
+  line-height: 22px;
+  margin-top: 0;
+  padding: 0 25px;
+  text-align: left;
+  transition: background-color 0.3s ease 0s;
+  width: auto;
+}
+
+#wpdreams .sortablecontainer label {
+  background: none repeat scroll 0 0 #EAEAEA;
+  border-radius: 3px 3px 0 0;
+  border-top: 1px solid #EAEAEA;
+  box-shadow: 0 1px 0 #F4F4F4 inset;
+  color: #666666;
+  display: inline-block;
+  font-size: 12px;
+  height: 20px;
+  line-height: 21px;
+  margin-bottom: 0;
+  margin-left: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+#wpdreams input.color {
+	background:0;
+	width:92px;
+}
+#wpdreams textarea {
+	width:334px;
+	height:150px;
+	line-height:100%;
+}
+#wpdreams input:hover,#wpdreams textarea:hover,#wpdreams input:focus,#wpdreams textarea:focus {
+	border-color:#C9C9C9;
+	-webkit-box-shadow:rgba(0,0,0,0.15) 0px 0px 8px;
+}
+#wpdreams form label {
+	margin:0 10px;
+	color:#6F6F6F;
+}
+
+#wpdreams input[type=button] {
+  -moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+  box-shadow:inset 0px 1px 0px 0px #cf866c;
+  
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+  background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+  background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+  background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+  background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+  background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+  
+  background-color:#d0451b;
+  
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  
+  border:1px solid #942911;
+  
+  display:inline-block;
+  color:#ffffff;
+  font-size:13px;
+  font-weight:normal;
+  padding:6px 24px;
+  text-decoration:none;
+  
+  text-shadow:0px 1px 0px #854629;
+  margin-right: 0;
+  cursor: pointer;
+  width: auto;
+}
+
+
+#wpdreams input[type=submit] {
+  margin: 7px 5px 0;
+  line-height: 12px;
+  padding: 7px 14px;
+  box-shadow: 0px 1px 0px 0px #92391D, 0px 1px 0px 0px #C24822 inset;
+  background: linear-gradient(to bottom, #D03F1B 5%, #BC3615 100%);
+  border: 0;
+  border-radius: 2px;
+  text-shadow: 1px 1px 0px #9B4C3D;
+  font-size: 13px;
+  color: #FFF;
+  position: relative;
+  cursor: pointer;
+  width: auto;
+}
+
+#wpdreams input[type=submit]:active {
+  box-shadow: 0px 1px 0px 0px #92391D, 0px 1px 0px 0px #C24822 inset;
+  background: #92391D;
+  outline-width: 0;
+}
+
+#wpdreams input[type=submit]:focus {
+  outline-width: 0;
+}
+
+#wpdreams .wpdreamsCustomContent .customContent button[name='add']::before {
+  background: url('icons/add-before.png') no-repeat scroll center center #228EC2;
+}
+
+
+
+#wpdreams input[type=button]:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+  background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+  background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+  background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+  background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+  background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
+  
+  background-color:#bc3315;
+}
+
+#wpdreams input[type=button]:active,
+#wpdreams input[type=submit]:active {
+  position:relative;
+  top:1px;
+}
+
+#wpdreams input[type=submit].red {
+  background:#ad3939;
+}
+
+#wpdreams input[type=submit].green {
+  background:#39ad41;
+  border: 1px solid #0a5f10;
+  box-shadow: none;
+}
+
+#wpdreams .sortable .wpdreams-box {
+	background:transparent url(icons/drag.png) no-repeat;
+	position:relative;
+	cursor:move;
+}
+#wpdreams .sortable .wpdreams-box .drag {
+	cursor:pointer;
+	height:46px;
+	position:absolute;
+	top:0;
+	left:0;
+	width:30px;
+}
+#wpdreams label {
+	vertical-align:baseline;
+	margin:0 10px;
+	color:#999999;
+}
+#wpdreams input.shortcode {
+	padding:1px 1px 1px 5px;
+	border:solid 1px #E5E5E5;
+	outline:0;
+	font:normal 10px/100% Verdana,Tahoma,sans-serif;
+	width:200px;
+	height:20px;
+}
+#wpdreams label.shortcode {
+	font-size:12px;
+}
+#wpdreams img.infoimage {
+	cursor:pointer;
+	margin-left:8px;
+	margin-top:-2px;
+	vertical-align:middle;
+}
+#wpdreams .item {
+    width: auto;
+    text-align: right;
+    padding: 16px 0 8px;
+    /* margin: 12px 0 1px; */
+    border: 0;
+}
+
+#wpdreams .item:nth-child(2n) {
+    /* background: #EFEFEF; */
+}
+
+#wpdreams fieldset fieldset .item {
+    border-bottom: 1px dashed #e7e7e7;
+    background: transparent !important;
+}
+
+#wpdreams fieldset fieldset .item:last-child {
+    border-bottom: 0;
+}
+
+#wpdreams .wpdreams-box {
+	overflow:hidden;
+  background: #FEFEFE;
+	border:solid 1px #DDDDDD;
+	outline:0;
+	font:normal 13px/100% Verdana,Tahoma,sans-serif;
+	box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+	-moz-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+	-webkit-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+	padding:10px;
+	margin:10px;
+  width: 790px;
+}
+#wpdreams .wpdreams-box .slider-info {
+	height:26px;
+	margin:4px 0 0 0;
+	font-size:1.1em;
+	padding:0 0 0 20px;
+}
+#wpdreams .wpdreams-box .slider-info span {
+	margin-left:20px;
+}
+#wpdreams .wpdreams-box .slider-info img {
+	margin-left:8px;
+	margin-top:-2px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+#wpdreams .preview {
+	height:28px;
+	vertical-align:middle;
+	border-radius:2px;
+	float:none;
+	cursor:pointer;
+}
+#wpdreams fieldset {
+	border:1px solid #EEEEEE;
+	margin:20px 5px 5px 5px;
+	padding:11px;
+}
+
+#wpdreams fieldset:first-child {
+  margin: 6px 5px 5px 5px;
+}
+
+#wpdreams form fieldset {
+	border:1px solid #EEEEEE;
+	margin:20px 5px 30px;
+	padding:11px;
+}
+
+#wpdreams fieldset fieldset {
+  background: none repeat scroll 0 0 #FEFEFE;
+  border: 1px dotted #DDDDDD;
+  font-size: 0.9em;
+  line-height: 45px;
+  margin: 5px 0 20px;
+  padding: 11px;
+} 
+
+#wpdreams fieldset fieldset fieldset {
+  line-height: 25px;
+  border: 0;
+}  
+
+#wpdreams fieldset fieldset legend {
+  color: #333;
+}
+
+#wpdreams fieldset fieldset fieldset legend {
+  color: #666;
+}
+
+#wpdreams .wpdreamsanimationselect + span {
+  padding: 4px 11px;
+  display: inline-block;
+  background: #eee;
+  margin: 3px;
+  animation-delay: 0.3s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+  backface-visibility: hidden;
+  -webkit-animation-delay: 0.3s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-timing-function: ease;
+  -webkit-backface-visibility: hidden;
+}
+
+
+#wpdreams .successMsg {
+	color:#1a772c;
+	padding:7px;
+	margin:5px;
+	border:1px solid #eee;
+	background:#f1fff1;
+	border-radius:3px;
+}
+/*#wpdreams .infoMsg {
+  background: #FFFDF1;
+  border: 1px solid #EEEEEE;
+  border-radius: 3px;
+  color: #776D1A;
+  margin: 6px 0 12px;
+  padding: 7px;
+  text-align: left;
+}*/
+#wpdreams .infoMsg {
+  margin: 5px 6px 15px;
+  border-left: 4px solid #43DD36;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  padding: 6px 13px;
+}
+
+#wpdreams .errorMsg {
+  margin: 5px 6px 15px;
+  border-left: 4px solid #DD3636;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  padding: 6px 13px;
+}
+
+#wpdreams .descMsg {
+  border-radius: 3px;
+  color: #979797;
+  margin: -3px 0 0px;
+  padding: 7px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.tooltip {
+	display:none;
+	background:transparent url(icons/black_arrow.png);
+	font-size:12px;
+	height:70px;
+	width:160px;
+	padding:25px;
+	color:#eee;
+}
+#wpdreams .overlay {
+	display:none;
+	z-index:10000;
+	background-color:#333;
+	min-width:10px;
+	min-height:10px;
+	border:1px solid #666;
+	-moz-box-shadow:0 0 90px 5px #000;
+	-webkit-box-shadow:0 0 90px #000;
+}
+#wpdreams .overlay .close {
+	background-image:url(icons/close.png);
+	position:absolute;
+	right:-15px;
+	top:-15px;
+	cursor:pointer;
+	height:35px;
+	width:35px;
+}
+#wpdreams .labeldrag {
+	background:#eee;
+	position:relative;
+	border:1px solid #ddd;
+	width:410px;
+	float:right;
+}
+#wpdreams .labeldrag .inner {
+	background:#FFF;
+	position:absolute;
+	top:5px;
+	left:5px;
+	border:1px solid #ddd;
+	background:url(icons/labelposition.png) no-repeat #fff;
+}
+#wpdreams .labeldrag .inner .dragme {
+	width:10px;
+	height:10px;
+	background-image:url(icons/point.png);
+	cursor: pointer;
+}
+
+#wpdreams img.radioimage {
+  border: 2px solid #eee;
+  border-radius: 4px;
+  margin: 5px;
+  cursor: pointer;
+  vertical-align:middle;
+  padding: 5px;
+  background: #fefefe;
+  max-height: 24px;
+}
+
+#wpdreams img.radioimage:hover {
+  border: 2px solid #ddd;
+}
+
+#wpdreams img.radioimage.selected {
+  background: none repeat scroll 0 0 #fefefe;
+  border: 2px solid #4897bc;
+}
+
+#wpdreams span.radioimage {
+	vertical-align:middle;
+	margin:0 10px;
+	color:#999999;
+}
+
+#wpdreams .wpdreamsBoxShadow {
+  text-align:right;                           
+}
+
+#wpdreams .wpdreamsBoxShadow .wpdreamsColorPicker {
+    display: inline-block;
+    /* float: right; */
+    margin-bottom: 13px;
+}
+
+#wpdreams .wpdreamsBorder {
+  text-align:right;
+}
+
+#wpdreams input.twodigit {
+  width: 37px; 
+  text-align:right;                                           
+}
+
+#preview .big-loading {
+  width: 400px;
+  height: 317px;
+  margin: 0 auto;
+  background: transparent url("icons/loading-big.gif") no-repeat center center;
+}
+
+
+#wpdreams .wpdreamsThemeChooser span {
+  background: url("icons/paint.png") no-repeat scroll 0 0 transparent;
+  display: inline-block;
+  height: 32px;
+  margin: 0 10px;
+  vertical-align: middle;
+  width: 32px;
+}
+
+#wpdreams .sortablecontainer {
+ width: 40%;
+ margin: 15px 30px;
+ float: left;
+ text-align: center;
+ color: #999;
+}
+
+#wpdreams .sortablecontainer p {
+  margin: 0 0 10px;
+}
+
+#wpdreams .sortablecontainer ul {
+  height: 220px;
+  overflow: auto;
+  padding: 10px;
+  background: url('icons/pattern-subtle.png') repeat center center #f6f6f6;
+  border: 1px solid #DBDBDB;
+}
+
+#wpdreams .sortablecontainer ul li {
+  padding: 6px;
+  cursor: move;
+  margin: 0 0 4px;
+  background: #fefefe;
+}
+
+#wpdreams .item p.extra {
+  margin: 20px;
+  color: #aaa;
+}
+
+#wpdreams .wpdreams-box.errorbox {
+  width: 770px; 
+  padding: 20px;
+}
+
+#wpdreams .wpdreams-box.errorbox h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #111;
+}
+
+#wpdreams .wpdreams-box.errorbox div {
+  padding: 7px;
+  background: #FFF;
+  border-bottom: 1px solid #eee;
+  margin: 5px;
+}
+
+#wpdreams .wpdreams-box.errorbox div p {
+  font-size: 13px;
+  padding: 0;
+  margin: 2px;
+  line-height: 20px;
+}
+
+#wpdreams .wpdreams-box.errorbox div p.err {
+  color: red;
+}
+
+#wpdreams .wpdreams-box.errorbox div p.cons {
+  color: blue;
+}
+
+#wpdreams .wpdreams-box.errorbox div p.sols {
+  color: #111;
+}
+
+#wpdreams .wpdreams-box.errorbox p.errors,
+#wpdreams .wpdreams-box.errorbox p.tick {
+  background: url(icons/exclamation.png) no-repeat scroll 0 center / 20px 20px transparent;
+  line-height: 20px;
+  margin: 0;
+  padding: 0 34px;
+}
+
+#wpdreams .wpdreams-box.errorbox p.tick {
+  background: url(icons/tick.png) no-repeat scroll 0 center / 20px 20px transparent;
+}
+
+@keyframes blink {  
+    0% { opacity: 1 }
+    10% { opacity: 0.8 }
+    20% { opacity: 0.7 }
+    30% { opacity: 0.6 }
+    40% { opacity: 0.5 }
+    50% { opacity: 0.45 }
+    60% { opacity: 0.5 }
+    70% { opacity: 0.6 }
+    80% { opacity: 0.7 }
+    90% { opacity: 0.8 }
+    100%  { opacity: 1 }
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1 }
+    10% { opacity: 0.8 }
+    20% { opacity: 0.7 }
+    30% { opacity: 0.6 }
+    40% { opacity: 0.5 }
+    50% { opacity: 0.45 }
+    60% { opacity: 0.5 }
+    70% { opacity: 0.6 }
+    80% { opacity: 0.7 }
+    90% { opacity: 0.8 }
+    100%  { opacity: 1 }
+}
+#wpdreams .blink {
+    -webkit-animation: blink 1.5s linear infinite;
+    -moz-animation: blink 1.5s linear infinite;
+    -ms-animation: blink 1.5s linear infinite;
+    -o-animation: blink 1.5s linear infinite;
+    animation: blink 1.5s linear infinite;
+}
+
+
+#wpdreams .mini {
+  width: 245px !important;
+  float: right;
+}
+
+.wpdreams-hint {
+  font-size: 10px;
+  color: #aaa;
+  line-height: 13px;
+  margin-top: 0px !important;
+  display: block !important;
+}
+
+.wpdreams-updown {
+  width: 12px;
+  height: 25px;
+  background: transparent url('icons/updown12x25.png') no-repeat;
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0 3px;
+}
+
+.wpdreams-updown .wpdreams-uparrow,
+.wpdreams-updown .wpdreams-downarrow {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+#wpdreams .wpdreamsYesNo,
+#wpdreams .wpdreamsOnOff {
+  display: inline-block;
+}
+
+#wpdreams .wpdreamsYesNo .wpdreamsYesNoInner,
+#wpdreams .wpdreamsOnOff .wpdreamsOnOffInner {
+  background: url("icons/on-off-new.png") no-repeat scroll -29px 0px transparent;
+  background-color: #ddb9b9;
+  border-radius: 2px;
+  box-shadow: 0px 1px 4px -2px #000000 inset;
+  -webkit-box-shadow: 0px 1px 5px -2px #000000 inset;
+  display: inline-block;
+  height: 27px;
+  transition: all 0.2s linear 0s;
+  vertical-align: middle;
+  width: 61px;
+  cursor: pointer;
+}
+
+#wpdreams .wpdreamsOnOff .wpdreamsOnOffInner {
+  background: url("icons/on-off.png") no-repeat scroll right top transparent;
+}
+
+#wpdreams .wpdreamsYesNo.active .wpdreamsYesNoInner,
+#wpdreams .wpdreamsOnOff.active .wpdreamsOnOffInner {
+  background-position: -1px 0;
+  background-color: #bfd6e4;
+}
+
+#wpdreams .wpdreamsGradient {
+  line-height: 42px;
+  padding-right: 19px;
+}
+
+#wpdreams .grad_ex {
+  border: 1px solid #555555;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  height: 28px;
+  margin-left: 8px;
+  vertical-align: middle;
+  width: 30px;
+}
+
+
+#wpdreams .dslider {
+  width: 300px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+#wpdreams .ddisplay {
+  width: 31px;
+  height: 31px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;      
+}
+
+#wpdreams .ddisplay .dbg {
+  background: url("icons/grad-deg.png") no-repeat scroll right top transparent;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: all 0.4s linear;
+}
+
+#wpdreams .dtxt {
+  width: 25px;
+  margin-left: 6px;
+  height: 13px;
+  line-height: 11px;
+  left: 0;
+  text-align: center;
+  font-size: 13px;
+  display: inline-block;
+}
+
+#wpdreams .asp_console {
+  margin: 10px;
+  font-size: 13px;
+  color: #444;
+}
+
+#wpdreams .wpdreamsCustomContent .sortablecontainer {
+  width: 100%;
+  margin: 0;
+}
+
+#wpdreams .wpdreamsCustomContent .sortablecontainer:after {
+  clear: both;
+}
+
+#wpdreams .wpdreamsCustomContent .ui-sortable {
+  height: 80px;
+  white-space: nowrap;
+  max-width: 690px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  line-height: auto;
+  text-align: left;  
+}
+
+#wpdreams .wpdreamsCustomContent .ui-sortable li {
+  width: 80px;
+  height: 100%;
+  padding: 0;
+  margin: 0 10px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  white-space: normal;
+}
+
+#wpdreams .wpdreamsCustomContent .ui-sortable li:hover .iconTopRight {
+  opacity: 1;
+}
+
+#wpdreams .wpdreamsCustomContent .ui-sortable li .content {
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  white-space: normal;
+  padding: 5%;
+  background: #FEFEFE;
+}
+
+#wpdreams input.missing,
+#wpdreams textarea.missing {
+  box-shadow: 0px 0px 4px 0px #f00;
+}
+
+#wpdreams .deleteIcon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url(icons/delete.png);
+  cursor: pointer;
+}
+
+#wpdreams .addIcon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url(icons/add.png);
+  cursor: pointer;
+}
+
+#wpdreams .iconTopRight {
+  position: absolute;
+  top: -6px;
+  right: -7px;
+  opacity: 0;
+  transition: 0.2s opacity linear;
+}
+
+#wpdreams .iconRightMiddle {
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  right: 6px;
+}
+
+#wpdreams .wpdreamsCustomContent .customContent,
+#wpdreams .wpdreamsCustomContent .searchContent {
+  width: 45%;
+  float: left;
+  background: url('icons/pattern-subtle.png') repeat center center #f6f6f6;
+  margin: 13px 0 0;
+  border: 1px solid #DBDBDB;
+  min-width: 260px;
+  box-shadow: 0 0 6px -4px #111;
+}
+
+#wpdreams .wpdreamsCustomContent .one-item {
+  margin: 8px 10px;
+}
+
+#wpdreams .wpdreamsCustomContent .result-item {
+  margin: 8px 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 10px;
+  background: #fefefe;
+  position: relative;
+}
+
+#wpdreams .wpdreamsCustomContent .itemResults {
+  max-height: 290px;
+  overflow: auto;
+}
+
+#wpdreams .wpdreamsCustomContent .result-item p.title {
+  margin: 0 0 4px 0;
+}
+
+#wpdreams .wpdreamsCustomContent .result-item p.etc {
+  font-size: 11px;
+  color: #969696;
+}
+
+#wpdreams .wpdreamsCustomContent .customContent button {
+  margin: 7px 5px 0;
+  line-height: 12px;
+  padding: 7px 14px;
+  box-shadow: 0px 1px 0px 0px #1D6D92, 0px 1px 0px 0px #228EC2 inset;
+  background: linear-gradient(to bottom, #1B96D0 5%, #1594BC 100%);
+  border: 0;
+  border-radius: 2px;
+  text-shadow: 1px 1px 0px #3D799B;
+  font-size: 13px;
+  color: #FFF;
+  position: relative;
+  cursor: pointer;
+}
+
+#wpdreams .wpdreamsCustomContent .customContent button:active {
+  box-shadow: 0px 1px 0px 0px #1D6D92, 0px 1px 0px 0px #228EC2 inset;
+  background: #2485B4;
+  outline-width: 0;
+}
+
+#wpdreams .wpdreamsCustomContent .customContent button:focus {
+  outline-width: 0;
+}
+
+#wpdreams .wpdreamsCustomContent .customContent button::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 100%;
+  background: url('icons/upload-before.png') no-repeat scroll center center #228EC2;
+  box-shadow: 0px 1px 0px 0px #1D6D92, 0px 1px 0px 0px #228EC2 inset;
+  /* border-right: 1px solid #F5F5F5; */
+  float: left;
+  position: absolute;
+  top: 0;
+  left: -16px;
+  border-radius: 2px 0 0 2px;
+}
+
+#wpdreams .wpdreamsCustomContent .customContent button[name='add']::before {
+  background: url('icons/add-before.png') no-repeat scroll center center #228EC2;
+}
+
+#wpdreams .wpdreamsCustomContent .searchContent {
+  float: right;
+}
+
+#wpdreams .wpdreamsCustomContent textarea {
+  width: 100%;
+  margin: 0;
+  background: #FFF;
+}
+
+#wpdreams .wpdreamsCustomContent h4 {
+  line-height: 24px;
+  width: 100%;
+  display: block;
+  color: #555;
+  text-align:left;
+  font-weight: bold;
+  margin: 8px 14px;
+}
+
+#wpdreams .wpdreamsCustomContent .one-item .searchmagn,
+#wpdreams .wpdreamsCustomContent .one-item .searchload {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("icons/magn.svg") no-repeat scroll 0px 0px transparent;
+  background-size: 22px auto;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#wpdreams .wpdreamsCustomContent .one-item .searchload {
+  background: url("icons/load24x24.gif") no-repeat scroll 0px 0px transparent;
+  display: none;
+}
+
+.postbox #wpdreams fieldset {
+   min-width: 300px;
+}
+
+.postbox #wpdreams .wpdreams-box {
+  width: auto;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  border: none;
+}
+
+.postbox #wpdreams .sortablecontainer {
+  width: 100%;
+  float: left;
+}
+
+
+.postbox #wpdreams .sortablecontainer ul {
+  max-width: 100%;
+}
+
+#wpdreams .wpdreamsUpload input[type='button'] {
+  line-height: 12px;
+  padding: 7px 14px;
+  box-shadow: 0px 1px 0px 0px #1D6D92, 0px 1px 0px 0px #228EC2 inset;
+  background: linear-gradient(to bottom, #1B96D0 5%, #1594BC 100%);
+  border: 0;
+  border-radius: 2px;
+  text-shadow: 1px 1px 0px #3D799B;
+  font-size: 13px;
+}
+
+#wpdreams .wpdreamsFontComplete h4 {
+    padding: 0;
+    margin: 15px 0px 6px;
+    line-height: 18px;
+    vertical-align: sub;
+    font-size: 13px;
+    color: #7A7A7A;
+    font-weight: bold;
+}
+
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { float: left; clear:left; padding: 0 0 0 5px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 45%; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; padding: 0 5px 0 0; }
+.ui-timepicker-rtl dl dt{ float: right; clear: right; }
+.ui-timepicker-rtl dl dd { margin: 0 45% 10px 10px; }
+
+#wpdreams a.button {
+  vertical-align: baseline;
+}
+
+#wpdreams iframe {
+  vertical-align: middle;
+}
+
+#wpdreams a.gopro {
+  border-bottom-color: #3D3D3D;
+  border-radius: 3px;
+  box-shadow: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  float: none;
+  margin: 6px 10px;
+  padding: 6px 16px 6px 35px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.2s linear 0s;
+  background: url("icons/tie.png") no-repeat scroll 5px 5px #40B6AD;
+}
