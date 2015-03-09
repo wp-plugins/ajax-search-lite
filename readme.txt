@@ -4,7 +4,7 @@ Donate link: http://wp-dreams.com
 Tags: search, better wordpress search, search plugin, relevance search, better search plugin, ajax search, wp ajax search, custom fields search, better search, ajax search plugin, wp search, wp search plugin, relevant search plugin, search plugin, wordpress search, live search
 Requires at least: 3.5
 Tested up to: 4.1
-Stable tag: 3.10
+Stable tag: 3.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -99,6 +99,10 @@ and will let you know what to do.
 2. Administrator area - nice and smooth
 
 == Changelog ==
+
+= 3.11 =
+* WPML compatibility fix
+* A possible security issue fix
 
 = 3.1 =
 * Updated engine with full UTF8 charset support
