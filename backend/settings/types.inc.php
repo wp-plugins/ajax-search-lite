@@ -50,15 +50,7 @@ include('class/yesno.class.php');
 
 
 add_action('admin_print_styles', 'admin_stylesV04');
-add_action('admin_enqueue_scripts', 'admin_scriptsV04');
-add_action('wp_ajax_wpdreams-ajaxinput', "wpdreams_ajaxinputcallback");
-if (!function_exists("wpdreams_ajaxinputcallback")) {
-	function wpdreams_ajaxinputcallback() {
-		$param = $_POST;
-		echo call_user_func($_POST['wpdreams_callback'], $param);
-		exit;
-	}
-}
+add_action('admin_enqueue_scripts', 'admin_scriptsV04');;
 
 if (!function_exists("admin_scriptsV04")) {
   function admin_scriptsV04() {
