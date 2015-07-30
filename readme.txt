@@ -4,16 +4,18 @@ Donate link: http://wp-dreams.com
 Tags: search, better wordpress search, search plugin, relevance search, better search plugin, ajax search, wp ajax search, custom fields search, better search, ajax search plugin, wp search, wp search plugin, relevant search plugin, search plugin, wordpress search, live search
 Requires at least: 3.5
 Tested up to: 4.2
-Stable tag: 3.11
+Stable tag: 3.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A powerful ajax search engine for WordPress.
+A powerful ajax search engine for WordPress. Add a live search form to your site with filters. Custom post types, custom fields, categories supported
 
 == Description ==
 
-Ajax Search Lite - is a live search plugin for WordPress. This responsive live search engine, which will boost your user experience by providing a user friendly ajax powered search form - an ajax live search. Very smooth animations with mobile device support and regular updates.
-Fine-tune the user experience by providing a powerful ajax search plugin to your visitors. It will rock your site! Supports custom post types and custom fields as well. Boost your site search engine with this custom built live search engine.
+Ajax Search Lite - is a live search plugin for WordPress. This responsive live search engine, which will boost your user experience by providing a user friendly ajax powered search form - an ajax live search. You can filter the results with the category and post type filter boxes as well.
+
+Very smooth animations with mobile device support and regular updates.
+Fine-tune the user experience by providing a powerful ajax search plugin to your visitors. It will rock your site! Supports custom post types and custom fields and more. Boost your site search engine with this custom built live search engine.
 
 Facebook: https://www.facebook.com/pages/WPDreams/383702515034741
 
@@ -24,6 +26,7 @@ Twitter: https://twitter.com/ernest_marcinko
 * Search in posts and pages
 * Search in custom post types
 * Search in title, description, excerpt and custom fields
+* Custom Filter boxes (checkbox filters) for categories and post types
 * WPML and Qtranslate compatible
 * 5 built in templates
 * Retina ready vectorized SVG icons
@@ -99,6 +102,16 @@ and will let you know what to do.
 2. Administrator area - nice and smooth
 
 == Changelog ==
+
+= 3.5 =
+* Major Query optimizations
+* Scrolling calculation and experience fixes
+* CSS fixes for older IE browsers
+* Input elements changed to flex layout
+* Bugs fixed where input would resize to 0 pixels
+* Term exclusion is now possible by ID
+* Mobile search and type fix
+* WooCommerce product variation Title and URL fixes
 
 = 3.11 =
 * WPML compatibility fix
