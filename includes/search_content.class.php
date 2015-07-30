@@ -512,13 +512,11 @@ if ( ! class_exists( 'wpdreams_searchContent' ) ) {
 				$r->content = $_content;
 
 				// -------------------------- Woocommerce Fixes -----------------------------
-				// Regexp fixing the title
-				$r->title = preg_replace( "/(Variation) \#(\d+) (of)/si", '', $r->title );
-
 				// A trick to fix the url
 				if ( $r->post_type == 'product_variation' &&
 				     class_exists( 'WC_Product_Variation' )
 				) {
+					$r->title = preg_replace( "/(Variation) \#(\d+) (of)/si", '', $r->title );
 					$wc_prod_var_o = new WC_Product_Variation( $r->id );
 					$r->link       = $wc_prod_var_o->get_permalink();
 				}
