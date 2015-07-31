@@ -1,0 +1,419 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ajax Search Lite\n"
+"POT-Creation-Date: 2015-07-30 17:13+0200\n"
+"PO-Revision-Date: 2014-12-10 21:20+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPathExcluded-0: ../js\n"
+"X-Poedit-SearchPathExcluded-1: ../backend/settings/assets\n"
+
+#: ../backend/analytics.php:7
+msgid "Enable search Google Analytics integration?"
+msgstr ""
+
+#: ../backend/analytics.php:12
+msgid "Google analytics pageview string"
+msgstr ""
+
+#: ../backend/analytics.php:16
+msgid ""
+"This is how the pageview will look like on the google analytics website. Use "
+"the {asl_term} variable to add the search term to the pageview."
+msgstr ""
+
+#: ../backend/analytics.php:40
+msgid "Analytics options"
+msgstr ""
+
+#: ../backend/analytics.php:45
+msgid "Result"
+msgstr ""
+
+#: ../backend/analytics.php:47
+msgid ""
+"After some time you should be able to see the hits on your analytics board."
+msgstr ""
+
+#: ../backend/settings.php:44
+msgid "Search shortcode:"
+msgstr ""
+
+#: ../backend/settings.php:47
+msgid "Search shortcode for templates:"
+msgstr ""
+
+#: ../backend/settings.php:58
+msgid "General Options"
+msgstr ""
+
+#: ../backend/settings.php:59 ../backend/settings.php:75
+msgid "Image Options"
+msgstr ""
+
+#: ../backend/settings.php:60
+msgid "Frontend Options"
+msgstr ""
+
+#: ../backend/settings.php:61
+msgid "Layout options"
+msgstr ""
+
+#: ../backend/settings.php:62
+msgid "Advanced"
+msgstr ""
+
+#: ../backend/settings.php:67
+msgid "Genearal Options"
+msgstr ""
+
+#: ../backend/settings.php:83
+msgid "Frontend Search Settings"
+msgstr ""
+
+#: ../backend/settings.php:91
+msgid "Layout Options"
+msgstr ""
+
+#: ../backend/settings.php:99
+msgid "Advanced Options"
+msgstr ""
+
+#: ../backend/settings.php:119
+msgid "Ajax Search Lite settings saved!"
+msgstr ""
+
+#: ../backend/settings/class/customfields.class.php:22
+msgid "Available public custom fields types"
+msgstr ""
+
+#: ../backend/settings/class/customfields.class.php:31
+msgid "Drag here the custom fields you want to use!"
+msgstr ""
+
+#: ../backend/settings/class/customposttypes.class.php:23
+msgid "Available post types"
+msgstr ""
+
+#: ../backend/settings/class/customposttypes.class.php:32
+msgid "Drag here the post types you want to use!"
+msgstr ""
+
+#: ../backend/tabs/instance/advanced_options.php:3
+msgid "Strip shortcodes from the content?"
+msgstr ""
+
+#: ../backend/tabs/instance/advanced_options.php:7
+msgid ""
+"When enabled, the shortcodes from the content will be removed instead of "
+"executed."
+msgstr ""
+
+#: ../backend/tabs/instance/advanced_options.php:12
+msgid "Title Field"
+msgstr ""
+
+#: ../backend/tabs/instance/advanced_options.php:21
+msgid "Description Field"
+msgstr ""
+
+#: ../backend/tabs/instance/advanced_options.php:30
+msgid "Exclude categories"
+msgstr ""
+
+#: ../backend/tabs/instance/advanced_options.php:37
+msgid "Exclude Posts by ID's (comma separated post ID-s)"
+msgstr ""
+
+#: ../backend/tabs/instance/advanced_options.php:43
+msgid "Exclude Terms by ID (comma separated term ID-s)"
+msgstr ""
+
+#: ../backend/tabs/instance/advanced_options.php:47
+msgid ""
+"Use this field to exclude any taxonomy term (tags, product categorories "
+"etc..)"
+msgstr ""
+
+#: ../backend/tabs/instance/advanced_options.php:52
+msgid "WPML compatibility"
+msgstr ""
+
+#: ../backend/tabs/instance/frontend_options.php:3
+msgid "Show search settings on the frontend?"
+msgstr ""
+
+#: ../backend/tabs/instance/frontend_options.php:8
+msgid ""
+"The default values of the checkboxes on the frontend are the values set "
+"above."
+msgstr ""
+
+#: ../backend/tabs/instance/frontend_options.php:12
+msgid "Show exact matches selector?"
+msgstr ""
+
+#: ../backend/tabs/instance/frontend_options.php:20
+msgid "Show search in posts selector?"
+msgstr ""
+
+#: ../backend/tabs/instance/frontend_options.php:27
+msgid "Show search in pages selector?"
+msgstr ""
+
+#: ../backend/tabs/instance/frontend_options.php:34
+msgid "Show search in title selector?"
+msgstr ""
+
+#: ../backend/tabs/instance/frontend_options.php:41
+msgid "Show search in content selector?"
+msgstr ""
+
+#: ../backend/tabs/instance/frontend_options.php:47
+msgid "Show search in custom post types selectors"
+msgstr ""
+
+#: ../backend/tabs/instance/frontend_options.php:52
+msgid ""
+"Nor recommended if you have more than 500 categories! (the HTML output will "
+"get too big)"
+msgstr ""
+
+#: ../backend/tabs/instance/frontend_options.php:54
+msgid "Show the categories selectors?"
+msgstr ""
+
+#: ../backend/tabs/instance/frontend_options.php:59
+msgid "Show the uncategorised category?"
+msgstr ""
+
+#: ../backend/tabs/instance/frontend_options.php:63
+msgid "Select which categories exclude"
+msgstr ""
+
+#: ../backend/tabs/instance/frontend_options.php:70
+msgid "Categories filter box header text"
+msgstr ""
+
+#: ../backend/tabs/instance/frontend_options.php:76
+#: ../backend/tabs/instance/general_options.php:130
+#: ../backend/tabs/instance/image_options.php:106
+#: ../backend/tabs/instance/layout_options.php:21
+msgid "Save options!"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:12
+msgid "Theme"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:21
+msgid "Search in posts?"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:28
+msgid "Search in pages?"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:34
+msgid "Search in custom post types"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:41
+msgid "Search in title?"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:48
+msgid "Search in content?"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:55
+msgid "Search in post excerpts?"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:61
+msgid "Search in custom fields"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:69
+msgid "Show exact matches only?"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:76
+msgid "Search in terms? (categories, tags)"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:82
+msgid "Result ordering"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:91
+msgid "Trigger search when clicking on search icon?"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:98
+msgid "Redirect to search results page when clicking on search icon?"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:105
+msgid "Trigger search when typing?"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:112
+msgid "Minimal character count to trigger search"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:119
+msgid "Max. results"
+msgstr ""
+
+#: ../backend/tabs/instance/general_options.php:124
+msgid "Results box viewport (in item numbers)"
+msgstr ""
+
+#: ../backend/tabs/instance/image_options.php:4
+msgid "Show images in results?"
+msgstr ""
+
+#: ../backend/tabs/instance/image_options.php:13
+msgid "Image width"
+msgstr ""
+
+#: ../backend/tabs/instance/image_options.php:22
+msgid "Image height"
+msgstr ""
+
+#: ../backend/tabs/instance/image_options.php:33
+msgid "Primary image source"
+msgstr ""
+
+#: ../backend/tabs/instance/image_options.php:44
+msgid "Alternative image source 1"
+msgstr ""
+
+#: ../backend/tabs/instance/image_options.php:55
+msgid "Alternative image source 2"
+msgstr ""
+
+#: ../backend/tabs/instance/image_options.php:66
+msgid "Alternative image source 3"
+msgstr ""
+
+#: ../backend/tabs/instance/image_options.php:77
+msgid "Alternative image source 4"
+msgstr ""
+
+#: ../backend/tabs/instance/image_options.php:88
+msgid "Default image url"
+msgstr ""
+
+#: ../backend/tabs/instance/image_options.php:97
+msgid "Custom field containing the image"
+msgstr ""
+
+#: ../backend/tabs/instance/layout/results_behaviour.php:3
+msgid "Sroll the window to the result list?"
+msgstr ""
+
+#: ../backend/tabs/instance/layout/results_behaviour.php:9
+msgid "Make the whole result area clickable?"
+msgstr ""
+
+#: ../backend/tabs/instance/layout/results_behaviour.php:15
+msgid "Close result list on document click?"
+msgstr ""
+
+#: ../backend/tabs/instance/layout/results_behaviour.php:21
+msgid "Show the close icon?"
+msgstr ""
+
+#: ../backend/tabs/instance/layout/results_behaviour.php:26
+msgid "No results text"
+msgstr ""
+
+#: ../backend/tabs/instance/layout/results_behaviour.php:30
+msgid "Did you mean text"
+msgstr ""
+
+#: ../backend/tabs/instance/layout/results_layout.php:3
+msgid "Placeholder text"
+msgstr ""
+
+#: ../backend/tabs/instance/layout/results_layout.php:9
+msgid "Show 'More results..' text in the bottom of the search box?"
+msgstr ""
+
+#: ../backend/tabs/instance/layout/results_layout.php:15
+msgid "' Show more results..' text"
+msgstr ""
+
+#: ../backend/tabs/instance/layout/results_layout.php:21
+msgid "Show author in results?"
+msgstr ""
+
+#: ../backend/tabs/instance/layout/results_layout.php:27
+msgid "Show date in results?"
+msgstr ""
+
+#: ../backend/tabs/instance/layout/results_layout.php:33
+msgid "Show description in results?"
+msgstr ""
+
+#: ../backend/tabs/instance/layout/results_layout.php:39
+msgid "Description length"
+msgstr ""
+
+#: ../backend/tabs/instance/layout_options.php:2
+#: ../backend/tabs/instance/layout_options.php:8
+msgid "Results layout"
+msgstr ""
+
+#: ../backend/tabs/instance/layout_options.php:3
+#: ../backend/tabs/instance/layout_options.php:14
+msgid "Results Behaviour"
+msgstr ""
+
+#: ../includes/asl_init.class.php:15 ../includes/asl_init.class.php:16
+#: ../includes/asl_init.class.php:25
+msgid "Ajax Search Lite"
+msgstr ""
+
+#: ../includes/asl_init.class.php:26
+msgid "Analytics Integration"
+msgstr ""
+
+#: ../includes/bfi_thumb.php:145
+msgid ""
+"The server does not have ImageMagick or GD installed and/or enabled! Any of "
+"these libraries are required for WordPress to be able to resize images. "
+"Please contact your server administrator to enable this before continuing."
+msgstr ""
+
+#: ../includes/bfi_thumb.php:273
+msgid "Image rotate failed."
+msgstr ""
+
+#: ../includes/bfi_thumb.php:296
+msgid "Image opacity change failed."
+msgstr ""
+
+#: ../includes/bfi_thumb.php:383
+msgid "Image color change failed."
+msgstr ""
+
+#: ../includes/bfi_thumb.php:400
+msgid "Image grayscale failed."
+msgstr ""
+
+#: ../includes/bfi_thumb.php:417
+msgid "Image negate failed."
+msgstr ""
