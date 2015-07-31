@@ -4,7 +4,7 @@ Donate link: http://wp-dreams.com
 Tags: search, better wordpress search, search plugin, relevance search, better search plugin, ajax search, wp ajax search, custom fields search, better search, ajax search plugin, wp search, wp search plugin, relevant search plugin, search plugin, wordpress search, live search
 Requires at least: 3.5
 Tested up to: 4.2
-Stable tag: 3.5
+Stable tag: 4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,7 +42,7 @@ Homepage: [wp-dreams.com](http://wp-dreams.com)
 
 Pro version Demo:  [Ajax Search Pro](http://demo.wp-dreams.com/?product=ajax_search_pro)
 
-**New In pro version 3.1 (2014.09.19):**
+**New In pro version 4.0 (2015.03.20):**
 
 * Frontend Demo: [Ajax Search Pro](http://demo.wp-dreams.com/?product=ajax_search_pro)
 * The search now can affect the default WordPress search results
@@ -55,14 +55,14 @@ Pro version Demo:  [Ajax Search Pro](http://demo.wp-dreams.com/?product=ajax_sea
 * Category selectors on the frontend – It’s now possible to filter the posts by categories
 * Post grouping by category or post type!
 * Search in comments
-* 65+ Themes - Fully configurable and editable - with theme customizer & preview window
+* 100+ Themes - Fully configurable and editable - with theme customizer & preview window
 * 4 layouts: Vertical, Horizontal, Polaroid and Isotopic (with pagination)
-* 250+ Admin options                                                    
-* Google keyword suggestions and autofill
+* 400+ Admin options                                                    
+* Google keyword suggestions and autocomplete
 * Compatibility options and features
 * Caching options & Search statistics
 * Keyword Highlighting & more...
-* Full features list: [Full Features List](http://wp-dreams.com/demo/wp-ajax-search-pro3/full-features-list/)
+* Full features list: [Full Features List](http://wp-dreams.com/demo/wp-ajax-search-pro/full-features-list/)
 
 == Installation ==
 
@@ -103,7 +103,7 @@ and will let you know what to do.
 
 == Changelog ==
 
-= 3.5 =
+= 4.0 =
 * Major Query optimizations
 * Scrolling calculation and experience fixes
 * CSS fixes for older IE browsers
