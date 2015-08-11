@@ -1,10 +1,9 @@
 <?php
 class AjaxSearchLiteWidget extends WP_Widget
 {
-  function AjaxSearchLiteWidget()
-  {
+  function __construct() {
     $widget_ops = array('classname' => 'AjaxSearchLiteWidget', 'description' => 'Displays an Ajax Search Lite!' );
-    $this->WP_Widget('AjaxSearchLiteWidget', 'Ajax Search Lite', $widget_ops);
+    parent::__construct('AjaxSearchLiteWidget', 'Ajax Search Lite', $widget_ops);
   }
   function form($instance)
   {
